@@ -738,3 +738,90 @@ input:focus {
 .rowWrapper-2fB6P0 {
     border-radius: 0px;
 }
+/*Create server popup*/
+[class*="theme-"] .wrapper-2ZbzR9 {
+    border-radius: 0px;
+    background-color: #20222500;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+}
+.action-1lSjCi {
+    background: #00000000;
+}
+[class*="theme-"] .actionButton-2PeQbJ {
+    background-color: var(--main-color);
+    border-radius: 0px;
+}
+/*or*/
+.theme-dark .theme-dark .or-3THJsp, .theme-dark .theme-light .or-3THJsp {
+    border-radius: 100px;
+    background-color: #20222500;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+}
+/*people pic*/
+.actionIcon-2IISM_{
+    filter: grayscale(0%) brightness(90%);
+}
+/*create server page*/
+.theme-dark .theme-light .footer-3rDWdC {
+    background: #2f313600;
+    border-radius: 0px;
+}
+/*avatar upload*/
+.avatar-21196O {
+    border: 5px solid var(--main-color);
+    border-radius: 0px;
+}
+.avatarUploaderInner-3UNxY3 {
+    background-color: #7289da00;
+}
+/*invite to server button*/
+.lookOutlined-3sRXeN.colorGreen-29iAKY {
+    border-radius: 0px;
+}
+/*reconnect button*/
+.button-1MICoQ {
+    border-radius: 0px;
+}
+/*notice on top of screen*/
+.noticeDefault-362Ko2 {
+    background-color: var(--main-color);
+    border-radius: 0px;
+}
+/*date divider*/
+.group-spacing-16 .hasContent-1_DUdQ {
+    background-color: var(--main-color);
+}
+.content-1o0f9g {
+    color: #d8d8d8;
+    background: var(--main-color);
+    border-radius: 0px;
+}
+/*the little annoying piece of shit in the voice channel member count(the forward slash)*/
+.total-3tKGEB:after {
+    content: " / ";
+    padding-left: 2px;
+    border-top: 0px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 0px solid transparent;
+    border-right-color: var(--background-tertiary);
+}
+/*emoji popup*/
+.infoBar-U6oBFk {
+    background-color: #94949400;
+}
+.emojiPicker-3m1S-j .categories-1feg4n {
+    background-color: #20222500;
+
+}
+.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA:hover {
+    border-radius: 0px;
+}
+.emojiPicker-3m1S-j {
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+    background-color: #20222500;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+}
