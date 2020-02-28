@@ -825,3 +825,11 @@ input:focus {
     border-color: var(--main-color);
     box-shadow: 0 0 7px var(--main-color);
 }
+/*delete channel popup*/
+.theme-dark .root-1gCeng {
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+    background-color: #20222500;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+}
