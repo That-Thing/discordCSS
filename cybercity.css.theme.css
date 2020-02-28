@@ -1,0 +1,727 @@
+//META{"name":"Cyberpunk city","description":"A animated pixel cyberpunk city","author":"Sen","version":"1"}*//{}
+
+/* Import some stupid css shit so I dont have to write in shit manually all the time. Shits gay */
+@import url(https://zerthox.github.io/ClearVision/css/ClearVision_v5.min.css);
+
+
+:root {
+	--main-color: #7763b8 ;
+	--hover-color: #7763b8 ;
+    --background-blur: 0px;
+    --background-brightness: 90		%;
+}
+
+body::after,
+.callout-backdrop,
+.userPopout-4pfA0d::before,
+.root-2sNHUF::before,
+#pubs-container::before,
+.auth-background,
+.auth-tiling-bg,
+.invite-modal .invite-splash,
+.radio-theme.light label,
+.radio-theme.dark label {
+    background-image: url(https://thumbs.gfycat.com/HilariousVelvetyArcherfish-small.gif) !important; /*Link must be HTTPS*/
+}
+
+
+
+/*Shit that I had to put in myself because fuck me amirite?*/
+.scrollableContainer-38zsVD {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background: transparent;
+    max-height: 144px;
+    border-radius: 8px;
+    scrollbar-width: none;
+}
+.expandedFolderBackground-2sPsd- {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px 16px 24px 24px;
+}
+.embedFull-2tM8-- {
+    border-left: 4px solid var(--background-tertiary);
+    background: #2b2b2b3d;
+    box-shadow: 7px 7px #00000070;
+    border-radius: 0px;
+}
+#bd-pub-button {
+    border-radius: 4px;
+    background-color: #3640583b;
+    color: #b9bbbe;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+    border-radius: 1px;
+}
+.sidebar-2K8pFh {
+    background: rgba(0, 0, 0, 0.65);
+}
+[class*="theme-"] .wrapper-1Rf91z {
+    background: rgba(0, 0, 0, 0.65);
+}
+.channelTextArea-1LDbYG.channelTextArea-rNsIhG {
+    border-radius: 5px;
+    margin: 10px 0 30px;
+}
+[class*="theme-"] [class*="channelTextAreaEnabled"] [class*="inner"] {
+    border: 1px #63b3b800 solid;
+}
+.contextMenu-HLZMGh {
+    position: relative;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 188px;
+    max-width: 320px;
+    border-radius: 4px;
+    padding: 6px 8px;
+    cursor: default;
+    background-color: #18191c4a;
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+    height: auto;
+}
+[class*="theme-"] .divider-3gKybi:not(.dividerRed-MKoLlr) span {
+    color: rgba(255, 255, 255, 0.8);
+    background: hsla(0, 17%, 21%, 0) !important;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    border-radius: 3px;
+    opacity: 1;
+    padding: 5px 15px;
+    width: 100%;
+    text-align: center;
+}
+.botTagRegular-2HEhHi {
+    background: #9172da;
+    color: #fff;
+    border-radius: 0px;
+}
+.iconBadge-2wi9r4 {
+    background-color: #89209c00;
+}
+.selected-aXhQR6 .layout-2DM8Md {
+    background-color: rgba(167, 117, 206, 0);
+}
+.searchBar-6Kv8R2 .searchBarComponent-32dTOx {
+    background-color: #20222500;
+}
+.theme-dark .emptyCard-3CNsz2 {
+    background-color: #2f313600;
+}
+.theme-dark .inset-GQDQYw {
+    background-color: #2f313600;
+}
+.theme-dark .popout-3G62UL {
+    background-color: #18191c59;
+}
+/*Streaming icon*/
+.theme-dark .applicationStreamingPreviewWrapper-GnrvWN {
+    background-color: #292b2f00;
+}
+/*seperator*/
+.theme-dark .separator-2c4hi3 {
+    background-color: var(--main-color) ;
+}
+/*Close button*/
+.theme-dark .closeButton-1tv5uR {
+    border-color: #72767d;
+    border-radius: 0px;
+}
+/*send message field*/
+.scrollableContainer-2NUZem {
+    overflow-x: hidden;
+    border-width: 1px;
+    overflow-y: scroll;
+    background-color: #40444b00;
+    max-height: 144px;
+    border-radius: 0px;
+    outline: none;
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+    scrollbar-width: none;
+}
+/*Upload thing*/
+.theme-dark .uploadModal-2ifh8j {
+    background-color: #6b6b6b00;
+    -webkit-box-shadow: 0 0 0 1px rgba(32,34,37,.6), 0 2px 10px 0 rgba(0,0,0,.2);
+    box-shadow: 0 0 0 1px rgba(32,34,37,.6), 0 2px 10px 0 rgba(0,0,0,.2);
+	border-radius: 0px;
+}
+
+/*Drag and drop thing*/
+.uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0px;
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+    background: var(--main-color) 00;
+    -webkit-animation: uploadModalBounce-30cglS .8s ease 0s normal forwards;
+    animation: uploadModalBounce-30cglS .8s ease 0s normal forwards;
+}
+/*Making more shit not round*/
+.content-3at_AU {
+    border-radius: 0px;
+}
+#bd-settings-sidebar .ui-tab-bar-item {
+    border-radius: 0px;
+
+/*Scrollbar shit*/
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color)!important;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color)!important;
+    border-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+/*User card popout*/
+.userPopout-3XzG_A {
+    border-radius: 0px;
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+}
+/*Protip message in user card*/
+.statusGreen-168O6Q {
+    color: var(--main-color) ;
+}
+/*Right click menu*/
+.contextMenu-HLZMGh {
+    position: relative;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 188px;
+    max-width: 320px;
+    border-radius: 0px;
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+}
+/*Add roles button square and colored*/
+.actionButton-VzECiy {
+    border-color: var(--main-color) ;
+    color: #b9bbbe;
+    background: transparent;
+    border-radius: 0px;
+}
+/*Send message text field in user popout card*/
+.quickMessage-1yeL4E {
+    background-color: #36393f;
+    border-color: var(--main-color) ;
+    color: hsla(0,0%,100%,.7);
+    border-radius: 0px;
+}
+/*Game icon in user card*/
+.gameIcon-_0rmMm {
+    border-radius: 0px;
+}
+/*Sqiare borders for connected accounts(Spotify, steam, twitch, etc.)*/
+.connectedAccount-36nQx7 {
+    border-radius: 0px;
+}
+.buttonInvertedPurple-WtBglX {
+    background-color: #593695;
+}
+/*Audio box*/
+.theme-dark .wrapperAudio-1jDe0Q {
+    background-color: rgba(47, 49, 54, 0);
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+	border-radius: 0px;
+}
+[class*="theme-"] .messageGroupWrapper-o-Zw7G {
+    background: rgba(0, 0, 0, 0.4) !important;
+    border-color: var(--main-color) !important;
+    border-radius: 0px;
+}
+/*Pinned messages box*/
+.theme-dark .messagesPopoutWrap-1MQ1bW {
+    background-color: #2f313600;
+    border: 1px solid;
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+    border-radius: 0px;
+}
+
+
+/*Attatchment box*/
+.theme-dark .attachment-33OFj0 {
+    background-color: rgba(47, 49, 54, 0);
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+	border-radius: 0px;
+}
+/*File context menu*/
+.container-3cGP6G {
+    background-color: rgba(47, 49, 54, 0);
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+	border-radius: 0px;
+}
+/*im new to discord message */
+.theme-dark .wumpusTooltip-65YlMT {
+    background: #ffffff26;
+    color: #4f545c;
+}
+input:focus {
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+	border-radius: 0px;
+}
+/*Server invite*/
+.wrapper-35wsBm {
+    background-color: #2f313600;
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+	border-radius: 0px;
+    padding: 16px;
+    width: 400px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*Join button*/
+.lookInverted-2D7oAl.colorBrand-3pXr91, .lookFilled-1Gx00P.colorGreen-29iAKY {
+    background-color: var(--main-color);
+	border-radius:0px;
+}
+/*Icon in join server box*/
+.theme-dark .guildIconImage-3qTk45 {
+    background-color: #36393f;
+	border-radius: 0px;
+}
+/*Border when talking in vc*/
+.callAvatarBorder-uWp8Ga.voice-3bPYC-.speaking-B2MXPi {
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0 0 0 3px var(--main-color);
+    box-shadow: inset 0 0 0 3px var(--main-color);
+}
+/*Leave call button*/
+.lookFilled-1Gx00P.colorRed-1TFJan {
+    color: #fff;
+    background-color: #f04747;
+	border-radius: 0px;
+}
+/*bar behind leave call button and shiet*/
+[class*="theme-"] .wrapper-29NfPK.minimum-2d6zH6 .actions-2vadYq .center-1Vp33r {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: transparent;
+	border-radius: 0px;
+}
+/*Remove gay rounded corners from image preview in chat*/
+.containerCozy-B4noqO>* {
+    border-radius: 0px;
+}
+/*Flags no longer rounded*/
+.regionSelectFlag-1htPow {
+    border-radius: 0px;
+}
+/*Location select popout*/
+.theme-dark .quickSelectPopout-X1hvgV {
+    background: #2f313600;
+    color: #f6f6f7;
+	border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+	border-radius: 0px;
+}
+/*Remove rounded corners on hover in bottom right buttons(end call, mute, deafen, etc.)*/
+.button-14-BFJ {
+    border-radius: 0px;
+}
+/*remove some round shit idk*/
+.container-2Pjhx- {
+    border-radius: 0px;
+}
+/*remove round on hover over username in DM list*/
+.layout-2DM8Md {
+    border-radius: 0px;
+}
+/*Make where would you like to go dropdown transparent*/
+.scroller-zPkAnE {
+    background-color: #2f313600;
+}
+/*Where would you like to go roundness remvoed*/
+.quickswitcher-3JagVE {
+    background: rgba(0, 0, 0, 0.85) !important;
+    box-shadow: 0px 0px 20px var(--main-color);
+	border-radius:0px;
+}
+/*Selected channel roundness removed*/
+[class*="theme-"] .resultFocused-3aIoYe {
+    background-color: var(--hover-color);
+	border-radius: 0px;
+}
+/*Where would you like to go text input field not round*/
+.input-2VB9rf, .keybindShortcut-1BD6Z1 span {
+    background: rgba(255, 255, 255, 0.05) !important;
+	border-radius: 0px;
+}
+/*Keyboard shortcuts but they're fucking cool*/
+.theme-dark .keybindShortcut-1BD6Z1 span {
+    color: #f6f6f7;
+    -webkit-box-shadow: inset 0 -4px 0 rgba(35,39,42,.6);
+    box-shadow: inset 0 -4px 0 rgba(35,39,42,.6);
+    border: 1px solid var(--main-color);
+    background-color: #72767d;
+}
+/*Settings buttons and shit*/
+.lookGhost-2Fn_0-.colorGrey-2DXtkV {
+    color: #747f8d;
+    border-radius: 0px;
+    background-color: rgba(116,127,141,.1);
+}
+/*Toggle*/
+.themeDefault-24hCdX.sizeDefault-2YlOZr:after {
+    border-radius: 0px;
+}
+.css-181m21f-menu {
+	border-radius:0px;
+	background-color: rgba(0,0,0,.1);
+}
+.css-15ejc46-control {
+	border-radius:0px;
+	background-color: rgba(0,0,0,.1);
+}
+/*Edit webhook*/
+[class*="modal"][class*="modal"][class*="size"], [class*="need-help-modal"] .form-inner, [class*="modal"] [class*="customWidth"] {
+	border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+	border-radius: 0px;
+}
+[class*="theme-"] .input-cIJ7To {
+    border-radius: 0px;
+}
+.theme-dark .lookOutlined-3sRXeN.colorPrimary-3b3xI6 {
+    border-radius: 0px;
+}
+.lookFilled-1Gx00P.colorBrand-3pXr91 {
+    border-radius: 0px;
+}
+.theme-dark .footer-3rDWdC {
+    background-color: #2f313600;
+}
+.css-181m2lf-menu {
+	border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+	border-radius: 0px;
+	background-color: #20222554;
+}
+.theme-dark .button-2CgfFz {
+    background-color: #36393f00;
+}
+.theme-dark .button-2CgfFz:hover {
+    background-color: #36393f00;;
+}
+.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
+    border-radius: 0px;
+}
+.item-PXvHYJ {
+	border-radius:0px;
+}
+.side-8zPYf6 .themed-OHr7kt.item-PXvHYJ:hover {
+    background-color: #7763b88c !important;
+    border-radius: 0px;
+}
+.horizontal-1ae9ci>.flex-1xMQg5:last-child, .horizontal-1ae9ci>.flexChild-faoVW3:last-child {
+    margin-right: 0;
+    border-radius: 0px;
+}
+/*Disable/delete acc buttons*/
+.lookOutlined-3sRXeN.colorRed-1TFJan {
+    border-radius: 0px;
+}
+/*Selected overlay screen*/
+.selected-mKYnfr.option-n0icdO {
+    border-radius: 0px;
+}
+/*Top right overaly screen*/
+.topRight-3GKDeL {
+    border-radius: 0px;
+}
+/*Bottom right*/
+.bottomRight-1T56wW {
+	border-radius: 0px;
+}
+/*Bottom left*/
+.bottomLeft-39-xss {
+	border-radius: 0px;
+}
+/*Top left*/
+.topLeft-3buHIc {
+    border-radius: 0px;
+}
+/*Checkbox cards*/
+[class*="card"] {
+    border-radius: 0px;
+}
+/*select overlay box*/
+.wrapper-3jrx9n {
+    border-radius: 0px;
+}
+/*Checkboxes*/
+.standardSidebarView-3F1I7i, .standardSidebarView-3F1I7i * {
+    border-radius: 0px;
+}
+/*@ mentions*/
+.mention, [class*="theme-"] .isMentioned-N-h9aa .mention {
+    border-radius: 0px;
+}
+/*Default color box and custom color box in role edit*/
+.colorPickerSwatch-5GX3Ve.custom-2SJn4n, .colorPickerSwatch-5GX3Ve.default-cS_caM {
+    border-radius: 0px;
+}
+/*Careful you have unsaved changes footer*/
+.theme-dark .elevationHigh-1PneE4 {
+    background-color: #0000005e;
+    border-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+/*Color selector*/
+.theme-dark .colorPickerCustom-2CWBn2 {
+    background: #00000036;
+    /* border-color: #202225; */
+    border-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+/*colored bars in lists(colored roles in role settings, server boost status, etc.)*/
+.side-8zPYf6 .item-PXvHYJ {
+    border-radius: 0px;
+}
+/*watch button in user popout card*/
+.actionsStreamPreview-2JlX14 .buttonSize-2Pmk-w, .actionsUserPopout-2MrzCa .buttonSize-2Pmk-w, .listeningActionsUserPopout-Ga2V_N .buttonSize-2Pmk-w {
+	border-radius: 0px;
+	border-color: var(--main-color);
+}
+/*bot tag in user card popout*/
+.nameTag-m8r81H .bot-2Fta1w, .nameTag-m8r81H .discriminator-19kRMP, .nameTag-m8r81H .username-2b1r56 {
+    border-radius: 0px;
+}
+/*roles in user popout*/
+.role-2irmRk {
+    border-radius: 0px;
+}
+/*betterdiscord settings*/
+#bd-settingspane-container .ui-switch-item {
+    border-radius: 0px;
+}
+/*Betterdiscord toggle buttons*/
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch {
+    border-radius: 0px;
+}
+#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch:after {
+    border-radius: 0px;
+}
+.bda-slist > li > div:not(.bda-right):not([style]) input {
+    border-radius: 0px;
+}
+.ui-switch::before {
+    border-radius: 0%!important;
+}
+.checkbox .checkbox-inner input[type=checkbox] + span {
+    border-radius: 0px;
+}
+.checkbox .checkbox-inner input[type=checkbox] + span::after {
+    border-radius: 0px;
+}
+/*Keybind editor hover*/
+.card-FDVird:before {
+    border-radius: 0px;
+}
+/*test video box*/
+.userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+    border-radius: 0px;
+}
+/*background removed on connect your accounts logos in connections*/
+.accountBtn-2Nozo3 .accountBtnInner-sj5jLs {
+    background-color: #2f313600;
+}
+/*Toggles for what accounts to display on your profile*/
+.sizeDefault-2YlOZr:after, .sizeMini-1ii40f {
+    border-radius: 0px;
+}
+/*Privacy and safety border color removal*/
+.checkbox-1ix_J3 {
+	border-color: rgba(240, 71, 71, 0);
+}
+/*Jump button in pinned messages*/
+.jumpButton-3DTcS_ {
+    border-radius: 0px;
+}
+/*Type the username of a friend in DMs text field*/
+.container-2XeR5Z {
+    border-radius: 0px;
+    background-color: #20222500;
+}
+/*Select friend checkbox*/
+.checkbox-1ix_J3 {
+    border-radius: 0px;
+}
+/*Added friend to dm*/
+.tag-2gHSR7 {
+    border-radius: 0px;
+    border: 1px double;
+    background-color: #36393f00;
+    border-color: var(--main-color);
+}
+/*Hover on friend*/
+.theme-dark .friendSelected-1sa4bG {
+    background-color: rgba(79, 84, 92, 0);
+}
+/*Incoming call*/
+.incomingCallInner-2VmFiR {
+    border-radius: 0px;
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+    background: #36393f00;
+}
+/*Join server box*/
+.theme-dark .contentWrapper-3WC1ID {
+    background: #36393f00;
+    border-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+    border-radius: 0px;
+}
+/*Online and members counters*/
+.pill-1dHPfk {
+    border-radius: 0px;
+    background-color: #20222500;
+	border-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+}
+/*server icon*/
+.iconInactive-98JN5i {
+    border-radius: 0px;
+}
+/*Decline call button*/
+.headerButtonColor-G7_f-V, [class*="theme-"] .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+    background-color: var(--main-color);
+    border-radius: 0px;
+}
+/*Ping everyone message*/
+.everyonePopout-nEbJY3 {
+    background-color: #36393f00;
+	border-color: var(--main-color);
+    box-shadow: 0 0 10px var(--main-color);
+    border-radius: 0px;
+}
+.footer-2aTx0s {
+    background-color: rgba(32, 34, 37, 0);
+    color: #72767d;
+}
+/*User limit in VC */
+.userLimit-64AFxe {
+    display: block;
+    border: 1px double;
+    border-color: var(--main-color);
+}
+.users-i_3-kL {
+    background-color: #36393f00;
+}
+.total-3tKGEB {
+    background-color: #20222500;
+}
+
+/*God I fucking hate discord's stupid fucking updates so much*/
+/*Send message field*/
+.channelTextArea-rNsIhG {
+    margin-bottom: 24px;
+    background-color: #36393f00;
+}
+.form-2fGMdU:before {
+    content: none;
+}
+
+
+
+/*retarded context menu popup on the right*/
+.wrapper-2aW0bm {
+    background-color: #36393f00;
+	border-radius: 0px;
+}
+
+/*removing the stupid fucking popup*/
+.button-1ZiXG9 {
+    display: none
+}
+/*Quote thing is now green :^)*/
+.blockquoteDivider-2hH8H6 {
+    background-color: #789922!important;
+}
+/*Who says you can't greentext on discord?*/
+.blockquoteContainer-U5TVEi blockquote {
+    color: #789922!important;
+}
+/*Linking channels not round*/
+[class*="theme-"] .wrapper-3WhCwL {
+    border-radius: 0px;
+}
+/*friends page top header thingy*/
+.container-1r6BKw {
+    background-color: rgba(0, 0, 0, 0.34) !important;
+}
+/*Friends container*/
+.container-1D34oG {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+/*Buttons in friends page*/
+.actionButton-uPB8Fs {
+    border-radius: 0px;
+    background-color: #20222500;
+	border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+}
+/*hover over friend*/
+.peopleListItem-2nzedh.active-rhSpJJ, .peopleListItem-2nzedh:hover {
+    border-radius: 0px;
+	background-color: #18191c33!important;
+}
+/*active now page*/
+.nowPlayingColumn-2sl4cE {
+    background: rgba(0, 0, 0, 0.1);
+}
+/*friends in active now*/
+.wrapper-3D2qGf {
+    border-radius: 0px;
+    background-color: #20222500;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+}
+/*playing a game*/
+.inset-3sAvek {
+    background-color: #00000000;
+}
+/*hover over friend*/
+.outer-1AjyKL.active-1xchHY, .outer-1AjyKL.interactive-3B9GmY:hover {
+    background-color: #18191c33;
+}
+/*pill buttons in top of friends menu*/
+.topPill-30KHOu .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
+    border-radius: 0px;
+}
+.topPill-30KHOu .themed-OHr7kt.item-PXvHYJ:hover {
+    border-radius: 0px;
+}
+/*add friend button*/
+.tabBar-ZmDY9v .item-3HknzM, .tabBody-3YRQ8W {
+    border-radius: 0px;
+}
+/*Games in library hover*/
+.rowWrapper-2fB6P0 {
+    border-radius: 0px;
+}
