@@ -686,11 +686,11 @@ input:focus {
 }
 /*friends page top header thingy*/
 .container-1r6BKw {
-    background-color: rgba(0, 0, 0, 0.34) !important;
+    background-color: rgba(0, 0, 0, 0.34)!important;
 }
 /*Friends container*/
 .container-1D34oG {
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.65)!important;
 }
 /*Buttons in friends page*/
 .actionButton-uPB8Fs {
@@ -717,7 +717,7 @@ input:focus {
 }
 /*playing a game*/
 .inset-3sAvek {
-    background-color: #00000000;
+    background-color: #00000000!important;
 }
 /*hover over friend*/
 .outer-1AjyKL.active-1xchHY, .outer-1AjyKL.interactive-3B9GmY:hover {
