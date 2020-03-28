@@ -501,7 +501,7 @@ input:focus {
 }
 /*Careful you have unsaved changes footer*/
 .theme-dark .elevationHigh-1PneE4 {
-    background-color: #0000005e;
+    background-color: #0000005e!important;
     border-color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
 }
@@ -833,9 +833,125 @@ input:focus {
     border-color: var(--main-color);
     box-shadow: 0 0 7px var(--main-color);
 }
+/*code block*/
 [class*="theme-"] .markup-2BOw-j code, [class*="theme-"] .markup-2BOw-j code.inline {
     color: hsla(0, 0%, 100%, .7) !important;
     background: hsla(0, 0%, 100%, 0.06) !important;
     border-radius: 0px;
     border: 1px solid var(--main-color);
+}
+/*weird triangle in add role menu*/
+[class*="theme-"] .autocompleteArrow-Zxoy9H, [class*="theme-"] .autocompleteHeaderBackground-30T70q {
+    background-color: rgba(0, 0, 0, 0);
+}
+/*top of add role menu*/
+.theme-dark .autocompleteArrow-Zxoy9H, .theme-dark .header-2bNvm4 {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/*add role menu*/
+[class*="theme-"] .autocompleteArrow-Zxoy9H, [class*="theme-"] .autocompleteShadow-iiGWFU {
+    border-radius: 0px;
+}
+/*@everyone popup*/
+.everyonePopout-nEbJY3 {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+    background-color: #20222500;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+}
+/*edit message button in @everyone popup*/
+.lookOutlined-3sRXeN.colorBrand-3pXr91:hover {
+    border-radius: 0px;
+}
+/*@everyone popup footer*/
+.footer-2aTx0s {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/*Public Servers*/
+
+/*side buttons*/
+#pubslayer .ui-tab-bar-item.selected {
+    color: var(--interactive-active)!important;
+    background-color: var(--main-color)!important;
+    border-radius: 0px;
+	
+}
+#pubslayer .ui-tab-bar-item:hover {
+    color: #f6f6f7;
+    background-color: #7763b88c !important;
+    border-radius: 0px;
+}
+/*search input box*/
+#pubslayer input {
+    border-radius: 0px;
+}
+/*reconnect button*/
+#pubslayer button {
+    background: var(--main-color);
+    border-radius: 0px;
+}
+/*stupid self-shill of their discord removed :^)*/
+.bd-server-card.bd-server-card-pinned {
+    display: none;
+}
+
+/*Nitro Page*/
+
+/*Billing information box*/
+.billingInformation-1MZXzx {
+    color: var(--text-normal);
+    font-size: 14px;
+    line-height: 18px;
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+    background-color: #20222500;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+}
+/*Payment method*/
+.detailsBlock-FoDTGA:last-child {
+    color: var(--text-normal);
+    font-size: 14px;
+    line-height: 18px;
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+    background-color: #20222500;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+}
+
+/*Gift Inventory*/
+/*card*/
+.card-7JP0BX {
+    color: #f6f6f7;
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+    background-color: #20222500!important;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color);
+}
+.header-1RC2Wb {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/*Server Boost settings*/
+
+/*unused boost*/
+.guildSubscriptionSlots-JPXXvN {
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+    background-color: #20222500!important;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color);
+}
+/*boosted server*/
+.guildHeader-3nh5RK {
+    background-color: var(--background-tertiary);
+    position: relative;
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+    background-color: #20222500!important;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color);
 }
