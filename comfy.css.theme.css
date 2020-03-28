@@ -833,3 +833,9 @@ input:focus {
     border-color: var(--main-color);
     box-shadow: 0 0 7px var(--main-color);
 }
+[class*="theme-"] .markup-2BOw-j code, [class*="theme-"] .markup-2BOw-j code.inline {
+    color: hsla(0, 0%, 100%, .7) !important;
+    background: hsla(0, 0%, 100%, 0.06) !important;
+    border-radius: 0px;
+    border: 1px solid var(--main-color);
+}
