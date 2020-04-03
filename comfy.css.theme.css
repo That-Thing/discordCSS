@@ -955,3 +955,12 @@ input:focus {
     border-color: var(--main-color)!important;
     box-shadow: 0 0 7px var(--main-color);
 }
+/*bakcground of the call because discord feels the need to change shit every five fucking minutes those motherfuckers*/
+.wrapper-KXM2i0 {
+    background-color: #18191c00;
+}
+/*green ring around the caller*/
+.border-Jn5IOt.voice-3bPYC-.speaking-B2MXPi {
+    -webkit-box-shadow: inset 0 0 0 3px var(--main-color)!important;
+    box-shadow: inset 0 0 0 3px var(--main-color)!important;
+}
