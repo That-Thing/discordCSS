@@ -1,6 +1,6 @@
 # Discord CSS
 Some themes I made for Better Discord. Still a WiP
-
+You can set your own image and colors. 
 <h3><a href='https://rauenzi.github.io/BetterDiscordApp/'>Bandaged Better Discord</a></h3>
 
 <h4>Theme 1: Cyberpunk City</h4>
