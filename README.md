@@ -1,5 +1,6 @@
 # Discord CSS
 Some themes I made for Better Discord. Still a WiP
+Probably the most detailed and attention focused theme on the internet.
 You can set your own image and colors. 
 <h3><a href='https://rauenzi.github.io/BetterDiscordApp/'>Bandaged Better Discord</a></h3>
 
