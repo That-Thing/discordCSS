@@ -6,7 +6,7 @@
 
 :root {
 	--main-color: #9c9c9c;
-	--hover-color: #9c9c9c;
+	--hover-color: #bfbfbf;
     --background-blur: 0px;
     --background-brightness: 90		%;
 }
@@ -448,7 +448,7 @@ input:focus {
 	border-radius:0px;
 }
 .side-8zPYf6 .themed-OHr7kt.item-PXvHYJ:hover {
-    background-color: #7763b88c !important;
+    background-color: var(--hover-color) !important;
     border-radius: 0px;
 }
 .horizontal-1ae9ci>.flex-1xMQg5:last-child, .horizontal-1ae9ci>.flexChild-faoVW3:last-child {
@@ -880,7 +880,7 @@ input:focus {
 }
 #pubslayer .ui-tab-bar-item:hover {
     color: #f6f6f7;
-    background-color: #7763b88c !important;
+    background-color: var(--hover-color) !important;
     border-radius: 0px;
 }
 /*search input box*/
@@ -984,6 +984,7 @@ input:focus {
 .border-3dQmSY.speaking-WDn8Wm {
     -webkit-box-shadow: inset 0 0 0 2px var(--main-color)!important;
     box-shadow: inset 0 0 0 2px var(--main-color)!important;
+	border-radius: 0px;
 }
 /*call BG*/
 .wrapper-2qzCYF.minimum-28Z35l {
@@ -1000,5 +1001,208 @@ input:focus {
 }
 /*stupid little tag with the username*/
 .overlayTitle-8IcS01 {
+    border-radius: 0px;
+}
+/*connecting screen*/
+.container-16j22k {
+    background-color: #00000000;
+    backdrop-filter: blur(10px);
+}
+/*stream in call*/
+.focusedVideo-AeFhkm {
+    border-radius: 0px;
+}
+/*unfocused call icons*/
+.focusedVideo-AeFhkm {
+    border-radius: 0px;
+}
+/*user icons in call*/
+.avatar-3elDyV {
+    border-radius: 0%;
+}
+.avatarSpeaking-3MqCHL {
+    -webkit-box-shadow: inset 0 0 0 2px var(--main-color),inset 0 0 0 3px var(--background-secondary);
+    box-shadow: inset 0 0 0 2px var(--main-color),inset 0 0 0 3px var(--background-secondary);
+}
+/*user image in chat*/
+img[alt] {
+    border-radius: 0px;
+}
+/*images in chat*/
+.container-1ov-mD>* {
+    border-radius: 0px;
+}
+
+/*those stupid fucking cunts JUST HAD TO UPDATE THE STUPID FUCKING EMOJI SELECTOR BECAUSE FOR SOME FUCKING REASON IT WASN'T GOOD ENOUGH.*/
+/*some stupid part of the new emoji thing*/
+.emojiPickerInExpressionPicker-3IzIcv .emojiPicker-3PwZFl {
+    background-color: rgba(0, 0, 0, 0.65);
+	border-radius: 0px!important;
+}
+/*some other part of the stupid fucking new emoji thing*/
+.contentWrapper-2txmjs {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 0px;
+}
+/*bottom bar of the stupid emoji thing*/
+.inspector-sdLnLS {
+    background-color: #292b2f00;
+	border-radius: 0px!important;
+}
+.categoryWrapper-UZ5YNj {
+    background-color: #2f313600;
+    border-bottom: 1px double var(--main-color);
+    margin-bottom: 5px;
+}
+/*background behind servers in emoji picker*/
+.guildIcon-3h-1IH {
+    background-color: #36393f00;
+}
+.categoryItemDefaultCategorySelected-_HCKoz, .categoryItemDefaultCategorySelected-_HCKoz:hover {
+    background-color: #4a5d8400;
+}
+/*server list in emoji picker*/
+.emojiPickerInExpressionPicker-3IzIcv .categoryList-2Kzf65 {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+/*discord is going to make me fucking neck myself*/
+
+
+
+
+/*bot iconv2 because fuck discord*/
+.rem-2m9HGf.botTag-2WPJ74 {
+    border-radius: 0px;
+}
+.px-10SIf7.botTag-2WPJ74 {
+    border-radius: 0px;
+}
+/*share screen button*/
+.button-1YfofB.buttonColor-7qQbGO.buttonActive-3FrkXp {
+    background-color: var(--main-color);
+}
+/*little green thing with an s that pops up in the bottom left when you screenshare*/
+.screenshareIcon-2redWJ {
+    border-radius: 0px;
+    background-color: var(--main-color)!important;
+}
+/*go live popup*/
+.theme-dark .modal-yWgWj- {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 0px;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+}
+
+/*Screenshare thumbnail*/
+.sourceThumbnail-14Iubx {
+	border-radius:0px;
+}
+.changeButton-1uBsOn {
+    /* background-color: #4f545c; */
+    background-color: var(--main-color);
+    border-radius: 0px;
+}
+/*noice cancellation popup*/
+.noiseCancellationPopout-iRK2A0 {
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 0px;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+}
+/*noice cancellation test button*/
+.lookFilled-1Gx00P.colorGrey-2DXtkV {
+    background-color: var(--main-color);
+    border-radius: 0px;
+}
+
+.lookFilled-1Gx00P.colorGrey-2DXtkV:hover {
+    background-color: var(--hover-color);
+}
+/*embed images*/
+.embedFull-2tM8-- .embedMedia-1guQoW {
+    border-radius: 0px;
+}
+/*You're streaming notification on user card*/
+.lookOutlined-3sRXeN.colorWhite-rEQuAQ:disabled {
+    border-radius: 0px;
+}
+/*floating stream window*/
+.pictureInPictureWindow-1B5qSe {
+    border-radius: 0px;
+}
+/*viewer name popup when hovering over the little eye in the floating sream*/
+.tooltip-2QfLtc {
+	border-radius:0px;
+}
+/*unread messages thing popup in channel list*/
+.unread-1xRYoj, .mention-1f5kbO, .contentSelectedText-3wUhMi, .unread-1Dp-OI {
+    border-radius: 0px;
+}
+/*unread message divider*/
+.isUnread-3Ef-o9 {
+    border-color: var(--main-color);
+}
+.isUnread-3Ef-o9 .content-1o0f9g {
+    color: #ffffff;
+}
+/*live indicator in voice call*/
+.liveIndicator-3aBbkJ {
+    border-radius: 0px;
+}
+/*live indicator in channel list*/
+.liveSmall-1dy2uA {
+    border-radius: 0px;
+}
+
+/*Server Boost page*/
+
+/*headers of different tiers*/
+.tierHeader---JJFb {
+    border-radius: 0px;
+}
+/*bodies of tiers*/
+.tierBody-16Chc9 {
+    padding: 16px;
+}
+.theme-dark .tierBody-16Chc9 {
+    border-radius: 0px;
+}
+/*unlocked blob when unlocked tier in server*/
+.tierUnlocked-25K6Kv {
+    border-radius: 0px;
+}
+/*Tier marker(the little bubbles marking level 1 and so on)*/
+.tierMarker-5HkGJ_ {
+    border-radius: 0px;
+}
+/*Gift nitro hover*/
+.lookFilled-1Gx00P.colorPrimary-3b3xI6:active, .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
+    background-color: var(--hover-color);
+}
+/*perks of being a nitro booster blobs*/
+.theme-dark .perk-2WeBWW {
+    background-color: var(--hover-color);
+	border-radius: 0px;
+}
+/*Backgrounds that appear behind level marker text when hovering over it.*/
+.tierMarkerLabelText-F_zS1F {
+    border-radius: 0px;
+}
+/*Name of the server and boost amount top bar*/
+.ctaBar-2UsjF2 {
+    border-radius: 0px;
+}
+/*background of server boost screen*/
+.scrollerThemed-2oenus.themeGhost-28MSn0 .scroller-2FKFPG {
+    background-color: #00000000;
+    backdrop-filter: blur(10px);
+}
+/*weird circle behind the boost status line*/
+.tierMarkerBackground-3q29am {
+    background-color: transparent;
+}
+/*more user boxes in vc*/
+.tile-2gi3tr.idle-U-LIlZ, .tile-2gi3tr.noInteraction-2pbsEq {
     border-radius: 0px;
 }
