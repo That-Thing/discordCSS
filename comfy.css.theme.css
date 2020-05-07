@@ -1196,7 +1196,6 @@ img[alt] {
 /*background of server boost screen*/
 .scrollerThemed-2oenus.themeGhost-28MSn0 .scroller-2FKFPG {
     background-color: #00000000;
-    backdrop-filter: blur(10px);
 }
 /*weird circle behind the boost status line*/
 .tierMarkerBackground-3q29am {
