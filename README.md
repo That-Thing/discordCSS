@@ -15,9 +15,9 @@ Comfy theme: <br>
 <i> @import url(https://rawcdn.githack.com/That-Thing/discordCSS/cf0583fe6626ccc1441bbfd9a84594d54a7813fe/comfy.css.theme.css); </i> <br>
 
 <h4>Theme 1: Cyberpunk City</h4>
-<img src="https://files.catbox.moe/w07llk.png" alt="Cyberpunk City by Sen">
+<img src="https://files.catbox.moe/smdoxn.png" alt="Cyberpunk City by Sen">
 <br>
 <h4>Theme 2: Comfy Theme</h4>
-<img src="https://files.catbox.moe/shnr5w.png" alt="Comfy Theme by Sen">
+<img src="https://files.catbox.moe/m1e8vu.png" alt="Comfy Theme by Sen">
 
 
