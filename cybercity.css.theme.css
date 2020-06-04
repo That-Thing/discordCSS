@@ -1,7 +1,15 @@
-//META{"name":"Cyberpunk city","description":"A animated pixel cyberpunk city","author":"Sen","version":"1"}*//{}
-
+/**
+* @name Cyberpunk City
+* @author Sen#0069
+* @description A pixel animation of a cyberpunk city.
+* @version 2.0
+* @source https://github.com/That-Thing/discordCSS
+* @website https://onee.ch/
+* @authorLink https://github.com/That-Thing
+* @invite kmDPEMs
+*/
 /* Import some stupid css shit so I dont have to write in shit manually all the time. Shits gay */
-@import url(https://zerthox.github.io/ClearVision/css/ClearVision_v5.min.css);
+@import url(https://clearvision.gitlab.io/v6/main.css);
 
 
 :root {
@@ -9,20 +17,105 @@
 	--hover-color: #7763b88c;
     --background-blur: 0px;
     --background-brightness: 90		%;
+	--background-image: url(https://thumbs.gfycat.com/HilariousVelvetyArcherfish-small.gif) !important; /*Link must be HTTPS*/
+	/* ACCENT COLORS */
+	--success-color: #7763b8; /* success accent color (hex, rgb or hsl) [default: #43b581] */
+	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+
+	/* STATUS COLORS */
+	--online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
+	--idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+	--streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+	/* GENERAL */
+	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+	--server-columns: 1; /* amount of server list columns [default: 1] */
+	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+	--members-width: 240px; /* member list width [default: 240px] */
+	--avatar-roundness: 0%; /* avatar roundness (0% for squares, 50% for circles) [default: 50%] */
+
+	/* APP BACKGROUND */
+	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
+	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+	--background-image: url(https://thumbs.gfycat.com/HilariousVelvetyArcherfish-small.gif); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+	--background-position: center; /* app background position [default: center] */
+	--background-size: cover; /* app background size [default: cover] */
+	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
+	--background-attachment: fixed; /* app background attachment [default: fixed] */
+	--background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+	--background-contrast: 100%; /* app background contrast [default: 100%] */
+	--background-saturation: 100%; /* app background saturation [default: 100%] */
+	--background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
+	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
+	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
+	--background-blur: 0px; /* app background blur [default: 0px] */
+	
+	/* HOME BUTTON ICON */
+	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
+	--home-position: center; /* home button icon position [default: center] */
+	--home-size: 40px; /* home button icon size [default: 40px] */
+	
+	/* MODAL BACKDROP */
+	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+	--backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(---background-image)] */
+	--backdrop-position: var(--background-position); /* modal backdrop position [default: var(---background-position)] */
+	--backdrop-size: var(--background-size); /* modal backdrop size [default: var(---background-size)] */
+	--backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(---background-repeat)] */
+	--backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
+	--backdrop-brightness: var(--background-brightness); /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+	--backdrop-contrast: var(--background-contrast); /* modal backdrop contrast [default: var(---background-contrast)] */
+	--backdrop-saturation: var(--background-saturation); /* modal backdrop saturation [default: var(---background-saturation)] */
+	--backdrop-invert: var(--background-invert); /* modal backdrop invert (0 - 100%)  [default: var(---background-invert)] */
+	--backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(---background-grayscale)] */
+	--backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(---background-sepia)] */
+	--backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
+	
+	/* USER POPOUT BACKGROUND */
+	--user-popout-image: transparent; /* app background image (link must be HTTPS) [default: var(---background-image)] */
+	--user-popout-position: var(--background-position); /* user popout background position [default: var(---background-position)] */
+	--user-popout-size: var(--background-size); /* user popout background size [default: var(---background-size)] */
+	--user-popout-repeat: var(--background-repeat); /* user popout background repeat [default: var(---background-repeat)] */
+	--user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
+	--user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+	--user-popout-contrast: var(--background-contrast); /* user popout background contrast [default: var(---background-contrast)] */
+	--user-popout-saturation: var(--background-saturation); /* user popout background saturation [default: var(---background-saturation)] */
+	--user-popout-invert: var(--background-invert); /* user popout background invert (0 - 100%) [default: var(---background-invert)] */
+	--user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(---background-grayscale)] */
+	--user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(---background-sepia)] */
+	--user-popout-blur: calc(var(--background-blur) + 0px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
+	
+	/* USER MODAL BACKGROUND */
+	--user-modal-image: transparent; /* app background image (link must be HTTPS) [default: var(---background-image)] */
+	--user-modal-position: var(--background-position); /* user modal background position [default: var(---background-position)] */
+	--user-modal-size: var(--background-size); /* user modal background size [default: var(---background-size)] */
+	--user-modal-repeat: var(--background-repeat); /* user modal background repeat [default: var(---background-repeat)] */
+	--user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+	--user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(---background-brightness)] */
+	--user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(---background-contrast)] */
+	--user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(---background-saturation)] */
+	--user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(---background-invert)] */
+	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
+	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
+	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
 }
 
-body::after,
-.callout-backdrop,
-.userPopout-4pfA0d::before,
-.root-2sNHUF::before,
-#pubs-container::before,
-.auth-background,
-.auth-tiling-bg,
-.invite-modal .invite-splash,
-.radio-theme.light label,
-.radio-theme.dark label {
-    background-image: url(https://thumbs.gfycat.com/HilariousVelvetyArcherfish-small.gif) !important; /*Link must be HTTPS*/
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*i hate discord*/
@@ -111,6 +204,593 @@ img[alt] {
 .appAvatar-3bgkQ9{
     border-radius: 0px!important;
 }
+.container-2lgZY8 .base-3dtUhz {
+	border-radius: 0px;
+}
+.appMount-3lHmkl .notice-2FJMB4 {
+	border-radius: 0px;
+	color: rgba(255, 255, 255, 0.7)
+}
+.toolbar-1t6TWx .iconWrapper-2OrFZ1 {
+	border-radius: 0px;
+	transition: all .3s ease-in-out
+}
+.search-2oPWTC .searchBar-3dMhjb,
+.libraryFilter-31ZUa2,
+.browseSearch-e9jF-f {
+	width: 140px;
+	height: 28px;
+	padding: 2px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 0px;
+	transition: width .2s ease-in-out .1s
+}
+.friendsOnline-2JkivW {
+	background: transparent;
+	color: rgba(255, 255, 255, 0.7);
+	text-transform: uppercase;
+	border-radius: 0px;
+	transition: all .3s ease-in-out;
+	cursor: default
+}
+.item-2hkk8m {
+	width: 12px;
+	margin-left: -6px;
+	border-radius: 0px;
+	background: var(--main-color);
+	box-shadow: 0 0 20px -1px var(--main-color)
+}
+.wrapper-21YSNc .expandedFolderBackground-2sPsd- {
+	background: rgba(255, 255, 255, 0.04);
+	border-radius: 0px;
+	transition: background-color .3s ease-in-out
+}
+.container-PNkimc .guildIconContainer-E1JUVt .childContainer-1wxZNh {
+	background: rgba(255, 255, 255, 0.07);
+	border-radius: 0px;
+}
+
+.container-PNkimc .partnered-3nJayh {
+	background: rgba(255, 255, 255, 0.07);
+	border-radius: 0px;
+}
+.voiceUser-14U_Ns .content-3xS9Lh {
+	border-radius: 0px;
+	transition: all .15s ease-in-out
+}
+.moreUsers-7v8yWY {
+	padding: 0 4px;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 0px;
+}
+.containerDragBefore-3Dzc5x:before,
+.containerDragAfter-3TEhpe:before,
+.containerDragBefore-3Dzc5x:after,
+.containerDragAfter-3TEhpe:after,
+.containerDragBefore-31UGCO:before,
+.containerDragAfter-1F4fgZ:before,
+.containerDragBefore-31UGCO:after,
+.containerDragAfter-1F4fgZ:after {
+	background: var(--main-color);
+	border-radius: 0px;
+}
+.container-3baos1>.flex-1O1GKY,
+.container-1giJp5>.flex-1O1GKY {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 0px;
+}
+.activityPanel-28dQGo .actions-aUdUfC {
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 0px;
+}
+.unread-1xRYoj:after,
+.mention-1f5kbO:after {
+	border-radius: 0px;
+
+}
+.privateChannels-1nO12o .channel-2QD9_O .layout-2DM8Md:before {
+	border-radius: 0px;
+}
+.privateChannels-1nO12o .channel-2QD9_O .layout-2DM8Md:after {
+	border-radius: 0px;
+}
+.gatedContent-3-B7qB .actionRed-gYn8D3:after {
+	border-radius: 0px;
+}
+.chat-3bRxxu .divider-3gKybi:before {
+	border-radius: 0px;
+}
+.chat-3bRxxu .divider-3gKybi>.dividerContent-2L12VI {
+	border-radius: 0px;
+}
+.newMessagesBar-mujexs:before {
+	border-radius: 0px;
+}
+.messagesWrapper-3lZDfY .jumpToPresentBar-9P20AM {
+	margin-bottom: 5px;
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 0px;
+	transition: all .15s ease-in-out
+}
+.messages-3amgkR .hasMore-3e72_v {
+	background: rgba(255, 255, 255, 0.07);
+	border: none;
+	border-radius: 0px;
+	box-shadow: none;
+	color: rgba(255, 255, 255, 0.7);
+	transition: all .15s ease-in-out
+}
+.channelTextArea-1LDbYG .inner-zqa7da {
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 0px;
+	transform: translateZ(0)
+}
+.channelTextArea-1LDbYG .textArea-2Spzkt~.buttons-205you:after {
+	border-radius: 0px;
+	box-shadow: 0 0 3px;
+	color: transparent;
+	transition: all .15s ease-in-out;
+	pointer-events: none
+}
+.channelTextArea-1LDbYG .wrapper-39oAo3 {
+	background: rgba(255, 255, 255, 0.07);
+	border-radius: 0px;
+	color: rgba(255, 255, 255, 0.7)
+}
+.content-ySCtCx .categoryFadeBlurple-1j72_A:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: var(--main-color);
+	border-radius: 0px;
+	opacity: .7
+}
+.container-1YxwTf .isMentioned-N-h9aa:after {
+	background: rgba(255, 255, 255, 0.1);
+	border-left: 4px solid var(--main-color);
+	border-radius: 0px;
+}
+.container-1YxwTf .markup-2BOw-j .blockquoteDivider-2hH8H6 {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 0px;
+}
+.container-1YxwTf>div[style^="border-radius: 0px;"] {
+	border-radius: 0px;
+	-webkit-animation: cv-message-jump 2s ease-in-out;
+	animation: cv-message-jump 2s ease-in-out
+}
+.container-1YxwTf>div[style^="border-radius: 0px;"] {
+	-webkit-animation: none;
+	animation: none
+}
+.reactions-1xb2Ex .reaction-1ELvT8 {
+	position: relative;
+	background: rgba(255, 255, 255, 0.04);
+	border-radius: 0px;
+	transition: all .15s ease-in-out
+}
+.reactions-1xb2Ex .reaction-1ELvT8.reactionMe-23mbRf:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: var(--main-color);
+	border-radius: 0px;
+	opacity: .5;
+	z-index: -1;
+	transition: all .15s ease-in-out
+}
+.container-1YxwTf .wrapper-35wsBm .guildIconExpired-2Qcq05:before,
+.container-1YxwTf .wrapper-35wsBm .guildIconExpired-2Qcq05:after {
+	content: "";
+	position: absolute;
+	top: 10%;
+	bottom: 10%;
+	left: 50%;
+	width: 6px;
+	background: var(--danger-color);
+	border-radius: 0px;
+}
+.content-3dzVd8 .markup-2BOw-j code.inline {
+	padding: 3.5px 7.5px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 0px;
+	color: rgba(255, 255, 255, 0.7);
+	font-family: var(--code-font);
+	line-height: 22px
+}
+.content-3dzVd8 .markup-2BOw-j pre>.hljs {
+	position: relative;
+	padding: 6px;
+	background: rgba(0, 0, 0, 0.42);
+	border: none;
+	border-radius: 0px;
+	color: rgba(255, 255, 255, 0.7)
+}
+.topic-TCb_qw .wrapper-3WhCwL,
+.topic-TCb_qw .mention,
+.markup-2BOw-j .wrapper-3WhCwL,
+.markup-2BOw-j .mention {
+	padding: 1px 4px;
+	border-radius: 0px;
+	line-height: 22px;
+	font-weight: 500;
+	white-space: nowrap;
+	transition: all .15s ease-in-out;
+	cursor: pointer
+}
+.spoilerContainer-331r0R .hiddenSpoiler-3i0zpa {
+	border-radius: 0px;
+}
+.messageGroupBlocked-3wrQQX {
+	position: relative;
+	background: rgba(0, 0, 0, 0.1) !important;
+	border: none;
+	border-radius: 0px;
+	transition: all .15s ease-in-out
+}
+.members-1998pB .member-3-YXUe .roleColor-rz2vM0:before {
+	border-radius: 0px;
+}
+.members-1998pB .member-3-YXUe .roleColor-rz2vM0:after {
+	border-radius: 0px;
+}
+.botTag-2WPJ74 {
+	border-radius: 0px;
+}
+.role-2irmRk {
+	border-radius: 0px;
+}
+.role-2irmRk>.roleCircle-3xAZ1j:after {
+	border-radius: 0px;
+}
+.searchResultsWrap-2DKFzt>.searchHeader-1l-wpR>.tab-2Ixsn0:before {
+	border-radius: 0px;
+}
+.searchResultsWrap-2DKFzt>.searchHeader-1l-wpR>.tab-2Ixsn0:after {
+	border-radius: 0px;
+}
+.searchResultsWrap-2DKFzt .searchResult-3pzFAB>.searchResultMessage-2VxO12.hit-NLlWXA {
+	background-color: rgba(0, 0, 0, 0.3);
+	border: 2px solid transparent;
+	border-radius: 0px;
+	box-shadow: none
+}
+.searchResultsWrap-2DKFzt .searchResult-3pzFAB.expanded-v2Szsz {
+	background-color: rgba(255, 255, 255, 0.04);
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+	border-radius: px;
+}
+.searchResultsWrap-2DKFzt .searchResult-3pzFAB.expanded-v2Szsz>.searchResultMessage-2VxO12.hit-NLlWXA {
+	background-color: rgba(255, 255, 255, 0.1);
+	border: 2px solid transparent;
+	border-radius: 0px;
+}
+.searchResultsWrap-2DKFzt .searchResult-3pzFAB .jumpButton-Ia2hRJ {
+	background-color: rgba(255, 255, 255, 0.04);
+	color: rgba(255, 255, 255, 0.5);
+	border-radius: 0px;
+	transition: all .3s ease-in-out
+}
+.searchResultsWrap-2DKFzt .highlight {
+	position: relative;
+	padding: 0 2px;
+	background-color: var(--hover-color);
+	border-radius: 0px;
+	color: #fff;
+	text-shadow: 0 0 3px
+}
+.container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: px;
+}
+.container-3gCOGc .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9 {
+	background-color: var(--main-color);
+	border-radius: 0px;
+	color: rgba(255, 255, 255, 0.9);
+	transition: all .15s ease-in-out
+}
+.container-3gCOGc .friendsTable-133bsv .friendTableAddWrapper-nHHZtK .friendTableAddHeader-m9bzFr .wrapper-1cBijl>.addFriendInput-4bcerK+.addFriendHint-3Y70FX:after {
+	border-radius: 0px;
+}
+.gameLibrary-TTDw4Y .rowWrapper-2fB6P0 {
+	background-color: transparent;
+	border-radius: 0px;
+	transition: all .15s ease-in-out
+}
+.gameLibrary-TTDw4Y .rowBackground-3MeNoN {
+	border-radius: 0px;
+	-webkit-animation: cv-fade-in 1s ease-in-out;
+	animation: cv-fade-in 1s ease-in-out
+}
+.activityFeed-1C0EmJ .card-GqTca8 {
+	border-radius: 0px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden
+}
+.activityFeed-1C0EmJ .wrapped-15rg6t,
+.activityFeed-1C0EmJ .unwrapped-37iUtM {
+	background-color: rgba(255, 255, 255, 0.07);
+	border-radius: 0px;
+}
+.activityFeed-1C0EmJ .empty-hejAOj {
+	background-color: rgba(255, 255, 255, 0.01);
+	border-radius: 0px;
+}
+.activityFeed-1C0EmJ .body-1BpgWG {
+	background-color: rgba(255, 255, 255, 0.04);
+	border-radius: 0px;
+}
+.activityFeed-1C0EmJ .section-2VKIPC {
+	background-color: transparent;
+	border-radius: 0px;
+}
+.activityFeed-1C0EmJ .wrapper-3UweLa {
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 0px;
+}
+.pagination-1omm9k .paginationItemContainer-3VCxU-:after {
+	border-radius: 0px;
+	transition: all .3s ease-in-out
+}
+.browseWrapper-2Qy6vG .checkbox-1ix_J3 {
+	border-radius: 0px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+}
+.browseWrapper-2Qy6vG .checkbox-1ix_J3:before {
+	border-radius: 0px;
+	transition: all .2s ease-in-out
+}
+.browseWrapper-2Qy6vG .checkbox-1ix_J3:after {
+	border-radius: 0px;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+	transition: all .2s ease-in-out
+}
+.popout-2sKjHu .option-1mJRMP {
+	border-radius: 0px;
+	color: rgba(255, 255, 255, 0.5);
+	transition: all .15s ease-in-out
+}
+.carouselButtonsContainer-Rba2-D .arrow-3jRqK8 {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 0px;
+	color: rgba(255, 255, 255, 0.3);
+	opacity: 1;
+	transition: all .15s ease-in-out
+}
+.pagination-1iCa-F .paginationItem-3-iI7C:after {
+	border-radius: 0px;
+	transition: all .3s ease-in-out
+}
+.button-38aScr {
+	border-radius: 0px;
+	transition: all .3s ease-in-out
+}
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-track-piece {
+	border: 3px solid transparent !important;
+	border-radius: 0px;
+	background-clip: padding-box !important
+}
+.tooltip-2QfLtc {
+	border-radius: 0px;
+}
+.checkbox-3kaeSU .checkboxInner-3yjcPe>span {
+	background: rgba(255, 255, 255, 0.04);
+	border: none;
+	border-radius: 0px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	transition: all .2s ease-in-out
+}
+.checkbox-3kaeSU .checkboxInner-3yjcPe>span:before {
+	border-radius: 0px;
+	transition: all .2s ease-in-out
+}
+.checkbox-3kaeSU .checkboxInner-3yjcPe>span:after {
+	border-radius: 0px;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+	transition: all .2s ease-in-out
+}
+.slider-1PF9SW .grabber-3mFHz2 {
+	background: #fff;
+	border: none;
+	border-radius: 0px;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3)
+}
+.wanderingCubesItem-WPXqao:before,
+.wanderingCubesItem-WPXqao:after {
+	border-radius: 0px;
+}
+.pulsingEllipsisItem-32hhWL {
+	background: #fff;
+	border-radius: 0px;
+}
+.popout-2iWAc- header {
+	background: var(--main-color);
+	border-radius: 0px;
+}
+.popout-2iWAc- section {
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 0px;
+}
+.userPopout-3XzG_A {
+	position: relative;
+	max-height: calc(100vh - 40px);
+	border-radius: 0px;
+}
+.contextMenu-HLZMGh .item-1Yvehc {
+	background-color: transparent;
+	color: rgba(255, 255, 255, 0.6);
+	border-radius: 0px;
+}
+.appMount-3lHmkl .menu-Sp6bN1 .itemBase-1Qj4z6.leave-1DRJfn:after {
+	border-radius: 0px;
+	opacity: .5;
+	transition: inherit;
+	z-index: -1
+}
+.layer-v9HyYc .container-2x5lvQ>.header-2C89wJ {
+	background: var(--main-color);
+	color: #fff;
+	border-radius: 0px;
+}
+.layer-v9HyYc .container-2x5lvQ>section {
+	background: rgba(0, 0, 0, 0.7);
+	border-radius: 0px;
+}
+.layer-v9HyYc .themedPopout-1TrfdI {
+	background-color: rgba(0, 0, 0, 0.7);
+	border: none;
+	border-radius: 0px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+.layer-v9HyYc .themedPopout-1TrfdI .header-ykumBX {
+	background-color: var(--main-color);
+	border-radius: 0px;
+}
+.layer-v9HyYc .messagesPopout-24nkyi .messageGroupWrapper-o-Zw7G {
+	border-radius: 0px;
+	transition: all .15s ease-in-out
+}
+.layer-v9HyYc .messagesPopout-24nkyi .messageGroupWrapper-o-Zw7G .actionButtons-1sUUug .jumpButton-3DTcS_ {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: rgba(255, 255, 255, 0.5);
+	border-radius: 0px;
+	transition: all .3s ease-in-out
+}
+.tabBar-2UKwcE .tabBarItem-1Cg-MI:before {
+	border-radius: 0px;
+}
+.tabBar-2UKwcE .tabBarItem-1Cg-MI:after {
+	border-radius: 0px;
+	transition: top .2s ease-in-out;
+	z-index: -1
+}
+.hasMore-sul95G>.hasMoreButton-1MELpI {
+	background-color: rgba(255, 255, 255, 0.07);
+	border: none;
+	border-radius: 0px;
+	color: rgba(255, 255, 255, 0.7);
+	transition: all .15s ease-in-out
+}
+.layer-v9HyYc .container-VSDcQc .autocompleteHeaderBackground-30T70q {
+	background: var(--main-color);
+	border-radius: 0px;
+}
+.layer-v9HyYc .container-VSDcQc .row-rrHHJU {
+	position: relative;
+	border-radius: 0px;
+	font-weight: 500;
+	z-index: 1
+}
+.emojiPicker-3m1S-j {
+	background-color: rgba(0, 0, 0, 0.7);
+	border: none;
+	border-radius: 0px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+.emojiPicker-3m1S-j .diversitySelector-tmmMv0>.item-16cXuq {
+	border-radius: 0px;
+}
+.emojiPicker-3m1S-j .stickyHeader-1SS0JU>.category-2U57w6 {
+	background-color: var(--main-color);
+	border-radius: 0px;
+	color: #fff
+}
+.emojiPicker-3m1S-j .category-2U57w6 {
+	background-color: rgba(255, 255, 255, 0.07);
+	border-radius: 0px;
+	color: rgba(255, 255, 255, 0.7);
+	text-align: center
+}
+.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA {
+	border-radius: 0px;
+	transition: all .15s ease-in-out, -webkit-filter 0s;
+	transition: all .15s ease-in-out, filter 0s;
+	transition: all .15s ease-in-out, filter 0s, -webkit-filter 0s
+}
+.popout-103y-5 .input-3ITkQf {
+	width: 35px;
+	height: 18px !important;
+	border-radius: 0px;
+}
+.popout-103y-5 .checkbox-1ix_J3 {
+	border-radius: 0px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	transition: all .15s ease-in-out
+}
+.popout-103y-5 .checkbox-1ix_J3:before {
+	border-radius: 0px;
+	transition: all .2s ease-in-out
+}
+.popout-103y-5 .checkbox-1ix_J3:after {
+	border-radius: 0px;
+	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.3);
+	transition: all .2s ease-in-out
+}
+.tabBar-2MuP6->.item-PXvHYJ:before {
+	border-radius: 0px;
+	opacity: 0;
+	transition: all .15s ease-in-out, bottom .2s ease-in-out;
+	z-index: -1
+}
+.tabBar-2MuP6->.item-PXvHYJ:after {
+	border-radius: 0px;
+}
+.connectedAccounts-repVzS>.connectedAccount-36nQx7 {
+	position: relative;
+	background: rgba(255, 255, 255, 0.04);
+	border-color: transparent;
+	border-radius: 0px;
+	transition: all .15s ease-in-out
+}
+.appMount-3lHmkl .keybindShortcut-1BD6Z1>span {
+	background: transparent;
+	border: 1px solid var(--hover-color);
+	border-radius: 0px;
+	box-shadow: inset 0 -4px var(--main-color);
+	color: rgba(255, 255, 255, 0.7);
+	transition: all .15s ease-in-out
+}
+#bda-qem~.emojiPicker-3m1S-j {
+	border-radius: 0px;
+}
+#bda-qem-twitch-container,
+#bda-qem-favourite-container {
+	height: 326px;
+	width: 344px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 0px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+.emote-container {
+	border-radius: 0px;
+	transition: all .15s ease-in-out
+}
+.replyer,
+.btn-quote,
+.citar-btn {
+	background-color: rgba(0, 0, 0, 0.4) !important;
+	border-radius: 0px;
+	transition: background-color .3s ease-in-out
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -347,6 +1027,7 @@ img[alt] {
     border-color: var(--main-color) ;
     box-shadow: 0 0 10px var(--main-color) ;
     border-radius: 0px;
+	backdrop-filter: blur(5px);
 }
 
 
@@ -537,8 +1218,15 @@ input:focus {
 }
 /*Selected overlay screen*/
 .selected-mKYnfr.option-n0icdO {
-    border-radius: 0px;
+    background-color: var(--main-color);
+    border-color: transparent;
 }
+.option-n0icdO:hover {
+    background-color: var(--hover-color) !important;
+    border-color: transparent;
+}
+
+
 /*Top right overaly screen*/
 .topRight-3GKDeL {
     border-radius: 0px;
@@ -627,6 +1315,9 @@ input:focus {
 }
 .checkbox .checkbox-inner input[type=checkbox] + span::after {
     border-radius: 0px;
+}
+.valueChecked-m-4IJZ {
+    background-color: var(--main-color)!important;
 }
 /*Keybind editor hover*/
 .card-FDVird:before {
@@ -1330,10 +2021,11 @@ img[alt] {
 .wrapper-2N7X54 {
     background-color: transparent;
 }
+/*
 .platform-win .layer-3QrUeG {
     top: -22px;
     padding-top: 0px;
-}
+}*/
 .layers-3iHuyZ:before {
     content: "Something";
     position: absolute;
@@ -1361,15 +2053,282 @@ img[alt] {
 .button-F9qN4n {
     background-color: transparent;
 }
+.container-3baos1:before {
+	display: none;
+    content: "Cyberpunk";
+    right: 50%;
+    text-align: right;
+    transform: translateX(50%);
+}
+.typeWindows-1za-n7>.wordmark-2iDDfm:before {
+	display: none;
+    content: "Cyberpunk";
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    text-shadow: 0 0 3px #000;
+}
+.typeWindows-1za-n7>.wordmark-2iDDfm:after {
+    content: "onee.ch";
+    color: rgba(255,255,255,0.3);
+    font-family: var(--code-font);
+    font-size: 10px;
+}
+.container-3baos1:after {
+	display: none;
+    content: "v6-pre.4.7.7";
+    left: 50%;
+    text-align: left;
+    opacity: 0;
+    transform: translateX(50%) rotateX(90deg);
+}
+
+
+/*Updated to clearview 6*/
+/*Shit sucks */
 
 
 
+/*folder border radius*/
+.folderIconWrapper-226oVY {
+    border-radius: 0px;
+}
 
+/*selection in settings*/
+.item-26Dhrx:last-child {
+	background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+}
+.item-26Dhrx {
+	background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+}
+/*add game in game activity settings*/
+.addGamePopout-2RY8Ju {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+}
+/*Added games hover*/
+.card-FDVird:before {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+}
+/*For some unknown reason clearview made the channels stupid*/
+.content-3at_AU .name-3_Dsmg {
+    color: rgba(255, 255, 255, 0.72);
+}
+.content-3at_AU .icon-1_QxNX {
 
+    color: rgba(255, 255, 255, 0.72);
+}
+/*channel hover*/
+.wrapper-1ucjTd:hover .content-3at_AU:before {
+    background: var(--hover-color);
+}
 
+/*user card*/
+.root-SR8cQa {
+    border-radius: 0px;
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+	backdrop-filter: blur(10px);
+}
+/*role add popup*/
+.container-VSDcQc {
+    border-radius: 0px;
+}
+/*channel categories*/
+.name-IbjUBS {
+    opacity: 1;
+}
 
+/*betterdiscord startup errors*/
+.bd-modal-wrapper .bd-modal-inner {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+}
+.bd-modal-wrapper .header {
+    background-color: #00000075!important;
+}
+.bd-modal-wrapper .bd-modal-body {
+    background-color: #00000075;
+}
+.header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa {
+    background-color: var(--main-color)!important;
+}
+.bd-modal-wrapper .footer button {
+    background-color: var(--main-color);
+	border-radius: 0px;
+}
+.bd-modal-wrapper .footer button:hover {
+    background-color: var(--hover-color);
+	border-radius: 0px;
+}
+/*archive*/
+.header-ykumBX {
+    background-color: #00000075!;
+}
+/*top buttons*/
+.topPill-30KHOu .themed-OHr7kt.item-PXvHYJ:hover {
+    border-radius: 0px;
+    background-color: var(--hover-color)!important;
+}
+.header-2-Imhb .tabBar-1kuXvJ .tab-ck0077.active-1MbGPa {
+    background-color: var(--main-color)!important;
+}
+/*Unreads*/
+.container-PbeQka {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+	backdrop-filter: blur(5px);
+}
+.channelHeader-3Gd2xq {
+	background-color: #00000075;
+}
+/*server in unreads*/
+.channel-2RlVpW {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+}
+/*messages in server*/
+.messages-3G3erD {
+    background-color: transparent;
+	border-top: 1px solid var(--main-color);
+    border-radius:0px
+}
+/*server icon in unreads*/
+guildIcon-3Co6k- {
+    background-color: transparent;
+	border-radius: 0px;
+}
+/*bell and checkmark buttons*/
+.tertiary-aMXF0g {
+    background-color: transparent;
+    color: var(--main-color);
+    border-radius: 0px;
+}
+.tertiary-aMXF0g:hover {
+    background-color: var(--hover-color);
+    color: white;
+    border-radius: 0px;
+}
+/*double checkmark*/
+.secondary-dIudih {
+    background-color: transparent;
+    color: var(--main-color);
+    border-radius: 0px;
+}
+.secondary-dIudih:hover {
+    background-color: var(--hover-color);
+    color: white;
+    border-radius: 0px;
+}
 
+/*reaction under post*/
+.reaction-1hd86g {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 3px var(--main-color)!important;
+}
 
+/*mention box under mentions*/
+.messageContainer-gbhlwo {
+    background-color: #00000075;
+	border-top: 1px solid var(--main-color);
+    border-radius:0px
+}
 
+/*Library page*/
+.scroller-1IIF0A {
+    background-color: #00000075;
+}
+.rowWrapperActive-2L7i9f {
+    padding-bottom: 1px;
+    margin-bottom: -1px;
+    z-index: 1;
+    background-color: var(--hover-color);
+}
+/*my games header*/
+.header-39GIC8 {
+    background-color: #00000075;
+}
+/*filter bar*/
+.search-2oPWTC .searchBar-3dMhjb, .libraryFilter-31ZUa2, .browseSearch-e9jF-f {
+    background: transparent;
+}
+/*library settings*/
+.scroller-2XE8rp {
+    background-color: #00000075;
+    contain: layout size;
+}
+.defaultIndicator-3WqGFB {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 3px var(--main-color)!important;
+}
+/*friends tab*/
+.actionButton-uPB8Fs:active {
+    background-color: transparent;
+    color: var(--main-color);
+}
+.actionButton-uPB8Fs:hover {
+    color: var(--main-color);
+    background-color: transparent;
+}
+.actionButton-uPB8Fs.highlight-Lf97TE {
+    background-color: transparent;
+    color: var(--main-color);
+}
+.outer-1AjyKL.active-1xchHY, .theme-dark .outer-1AjyKL.interactive-3B9GmY:hover {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+}
 
+/*Spotify in chat*/
+.invite-18yqGF {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+	backdrop-filter: blur(5px);
+}
+/*Cards such as the user details in My account*/
+.cardPrimary-1Hv-to {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+	backdrop-filter: blur(5px); 
+}
+/*transaction history in Billing*/
+.paymentPane-3bwJ6A {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+	backdrop-filter: blur(5px); 
+}
+.payment-xT17Mq {
+    background-color: transparent;
+    color: #b9bbbe;
+}
+.bottomDivider-1K9Gao {
+    border-bottom-color: var(--main-color);
+}
 
