@@ -11,6 +11,12 @@
 /* Import some stupid css shit so I dont have to write in shit manually all the time. Shits gay */
 @import url(https://clearvision.gitlab.io/v6/main.css);
 
+
+
+/*CHANGE THE IMAGE URL ON LINE 19 and 41 to change the image*/
+
+
+
 :root {
 	--main-color: #9c9c9c;
 	--hover-color: #bfbfbf;
@@ -1264,6 +1270,7 @@ input:focus {
     /* border-color: #202225; */
     border-color: var(--main-color);
     box-shadow: 0 0 10px var(--main-color);
+	backdrop-filter: blur(5px); 
 }
 /*colored bars in lists(colored roles in role settings, server boost status, etc.)*/
 .side-8zPYf6 .item-PXvHYJ {
@@ -1849,11 +1856,12 @@ img[alt] {
     background-color: var(--main-color)!important;
 }
 /*go live popup*/
-.theme-dark .modal-yWgWj- {
+.modal-yWgWj- {
     background-color: rgba(0, 0, 0, 0.65);
     border-radius: 0px;
     border-color: var(--main-color);
     box-shadow: 0 0 7px var(--main-color);
+	backdrop-filter: blur(5px)!important;
 }
 
 /*Screenshare thumbnail*/
@@ -1871,6 +1879,7 @@ img[alt] {
     border-radius: 0px;
     border-color: var(--main-color);
     box-shadow: 0 0 7px var(--main-color);
+	backdrop-filter: blur(5px)
 }
 /*noice cancellation test button*/
 .lookFilled-1Gx00P.colorGrey-2DXtkV {
@@ -2165,7 +2174,7 @@ img[alt] {
 }
 /*archive*/
 .header-ykumBX {
-    background-color: #00000075!;
+    background-color: #00000075!important;
 }
 /*top buttons*/
 .topPill-30KHOu .themed-OHr7kt.item-PXvHYJ:hover {
@@ -2339,4 +2348,59 @@ guildIcon-3Co6k- {
 .option-96V44q.selected-rZcOL- {
     background-color: var(--hover-color)!important;
 	border-radius: 0px;
+}
+/*Permissions toggles */
+
+.item-3T2z1R:first-child { /*left*/
+    border-radius: 0px 0 0 0px;
+}
+.item-3T2z1R:last-child { /*right*/
+    border-radius: 0 0px 0px 0;
+}
+/*dropdown menus*/
+.css-n57xjs-menu {
+    background-color: #00000075!important;
+    border-radius: 0px!important;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+	backdrop-filter: blur(5px)!important; 
+}
+/*hover on menu item*/
+.css-1gnr91b-option {
+    background-color: var(--hover-color)!important;
+}
+/*description boxes like in server template */
+.descriptionBox-1EKQKL {
+    background-color: #00000075!important;
+    border-radius: 0px!important;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+	backdrop-filter: blur(5px)!important; 
+}
+/*Tier Headers in server boost status page*/
+.tierHeaderLocked-1a2opw {
+    background-color: #00000075!important;
+    border-radius: 0px;
+	border-bottom: none!important;
+	box-shadow-bottom: none!important;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+	backdrop-filter: blur(5px); 
+}
+/*tier body*/
+.tierBody-x9kBBp {
+    background-color: transparent!important;
+    border-radius: 0px;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+	backdrop-filter: blur(5px); 
+}
+
+/*boxes in audit log*/
+.headerClickable-2IVFo9, .theme-dark .headerDefault-1wrJcN {
+    background-color: #00000075!important;
+	backdrop-filter: blur(5px)!important; 
+}
+.auditLog-3jNbM6 {
+    border-color: var(--main-color)!important;
 }
