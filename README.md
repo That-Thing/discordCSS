@@ -6,8 +6,8 @@ You can set your own image and colors.
 
 <h3>How to get live updates to themes</h3>
 <h5>Go to Custom CSS in the settings and paste this line of code in for the theme you want</h5> 
-Cyberpunk theme: https://rawcdn.githack.com/That-Thing/discordCSS/cf0583fe6626ccc1441bbfd9a84594d54a7813fe/cybercity.css.theme.css<br>
-Comfy theme: @import url(https://rawcdn.githack.com/That-Thing/discordCSS/cf0583fe6626ccc1441bbfd9a84594d54a7813fe/comfy.css.theme.css);
+Cyberpunk theme: `https://rawcdn.githack.com/That-Thing/discordCSS/cf0583fe6626ccc1441bbfd9a84594d54a7813fe/cybercity.css.theme.css`<br>
+Comfy theme: `@import url(https://rawcdn.githack.com/That-Thing/discordCSS/cf0583fe6626ccc1441bbfd9a84594d54a7813fe/comfy.css.theme.css);`
 
 <h4>Theme 1: Cyberpunk City</h4>
 <img src="https://files.catbox.moe/w07llk.png" alt="Cyberpunk City by Sen">
