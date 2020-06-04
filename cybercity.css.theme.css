@@ -965,7 +965,10 @@ img[alt] {
     border-radius: 0px;
     border-color: var(--main-color) ;
     box-shadow: 0 0 10px var(--main-color) ;
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px)!important;
+}
+.popout-2iWAc- {
+    backdrop-filter: blur(5px);
 }
 /*Protip message in user card*/
 .statusGreen-168O6Q {
@@ -2331,4 +2334,23 @@ guildIcon-3Co6k- {
 .bottomDivider-1K9Gao {
     border-bottom-color: var(--main-color);
 }
-
+/*Server dropdown with stuff like server boost, invite people, server settings, etc. */
+.styleFixed-sX-yHV {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+	backdrop-filter: blur(5px); 
+}
+/*Search in the top right*/
+.container-3ayLPN {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+	backdrop-filter: blur(5px); 
+}
+.option-96V44q.selected-rZcOL- {
+    background-color: var(--hover-color)!important;
+	border-radius: 0px;
+}

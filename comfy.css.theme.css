@@ -99,18 +99,9 @@
 	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
 	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
 }
-body::after,
-.callout-backdrop,
-.userPopout-4pfA0d::before,
-.root-2sNHUF::before,
-#pubs-container::before,
-.auth-background,
-.auth-tiling-bg,
-.invite-modal .invite-splash,
-.radio-theme.light label,
-.radio-theme.dark label {
-    background-image: url(https://files.catbox.moe/62c2gi.jpg) !important; /*Link must be HTTPS*/
-}
+
+
+
 
 
 /*i hate discord*/
@@ -863,87 +854,6 @@ img[alt] {
     color: #fff;
     border-radius: 0px;
 }
-
-/*Shit that I had to put in myself because fuck me amirite?*/
-.scrollableContainer-38zsVD {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    background: transparent;
-    max-height: 144px;
-    border-radius: 8px;
-    scrollbar-width: none;
-}
-.expandedFolderBackground-2sPsd- {
-    background: rgba(255, 255, 255, 0);
-    border-radius: 16px 16px 24px 24px;
-}
-.embedFull-2tM8-- {
-    border-left: 4px solid var(--background-tertiary);
-    background: #2b2b2b3d;
-    box-shadow: 7px 7px #00000070;
-    border-radius: 0px;
-}
-#bd-pub-button {
-    border-radius: 4px;
-    background-color: #3640583b;
-    color: #b9bbbe;
-    text-align: center;
-    font-size: 12px;
-    line-height: 20px;
-    height: 20px;
-    border-radius: 1px;
-}
-.sidebar-2K8pFh {
-    background: rgba(0, 0, 0, 0.65);
-}
-[class*="theme-"] .wrapper-1Rf91z {
-    background: rgba(0, 0, 0, 0.65);
-}
-.channelTextArea-1LDbYG.channelTextArea-rNsIhG {
-    border-radius: 5px;
-    margin: 10px 0 30px;
-}
-[class*="theme-"] [class*="channelTextAreaEnabled"] [class*="inner"] {
-    border: 1px #63b3b800 solid;
-}
-.contextMenu-HLZMGh {
-    position: relative;
-    display: block;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    min-width: 188px;
-    max-width: 320px;
-    border-radius: 4px;
-    padding: 6px 8px;
-    cursor: default;
-    background-color: #18191c4a;
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high);
-    height: auto;
-}
-[class*="theme-"] .divider-3gKybi:not(.dividerRed-MKoLlr) span {
-    color: rgba(255, 255, 255, 0.8);
-    background: hsla(0, 17%, 21%, 0) !important;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin: 10px 0px;
-    border-radius: 3px;
-    opacity: 1;
-    padding: 5px 15px;
-    width: 100%;
-    text-align: center;
-}
-/*The little bot square next to a bot's username*/
-.botTagRegular-2HEhHi {
-    background: var(--main-color);
-    color: #fff;
-    border-radius: 0px;
-}
-.botTagInvert-18-95s {
-    background: var(--main-color);
-    color: #fff;
-    border-radius: 0px;
-}
 .iconBadge-2wi9r4 {
     background-color: #89209c00;
 }
@@ -1041,6 +951,10 @@ img[alt] {
     border-radius: 0px;
     border-color: var(--main-color) ;
     box-shadow: 0 0 10px var(--main-color) ;
+	backdrop-filter: blur(5px)!important;
+}
+.popout-2iWAc- {
+    backdrop-filter: blur(5px);
 }
 /*Protip message in user card*/
 .statusGreen-168O6Q {
@@ -1090,7 +1004,6 @@ img[alt] {
     box-shadow: 0 0 10px var(--main-color) ;
 	border-radius: 0px;
 }
-
 [class*="theme-"] .messageGroupWrapper-o-Zw7G {
     background: rgba(0, 0, 0, 0.4) !important;
     border-color: var(--main-color) !important;
@@ -1103,7 +1016,10 @@ img[alt] {
     border-color: var(--main-color) ;
     box-shadow: 0 0 10px var(--main-color) ;
     border-radius: 0px;
+	backdrop-filter: blur(5px);
 }
+
+
 /*Attatchment box*/
 .theme-dark .attachment-33OFj0 {
     background-color: rgba(47, 49, 54, 0);
@@ -1124,14 +1040,6 @@ img[alt] {
     color: #4f545c;
 }
 input:focus {
-    border-color: var(--main-color) ;
-    box-shadow: 0 0 10px var(--main-color) ;
-	border-radius: 0px;
-}
-
-/*watch button in user card*/
-.lookOutlined-3sRXeN.colorWhite-rEQuAQ {
-    color: #fff;
     border-color: var(--main-color) ;
     box-shadow: 0 0 10px var(--main-color) ;
 	border-radius: 0px;
@@ -1202,7 +1110,7 @@ input:focus {
 /*remove round on hover over username in DM list*/
 .layout-2DM8Md {
     border-radius: 0px;
-} 
+}
 /*Make where would you like to go dropdown transparent*/
 .scroller-zPkAnE {
     background-color: #2f313600;
@@ -1277,7 +1185,7 @@ input:focus {
     background-color: #36393f00;
 }
 .theme-dark .button-2CgfFz:hover {
-    background-color: #36393f00;;
+    background-color: #36393f00;
 }
 .side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ {
     border-radius: 0px;
@@ -1299,8 +1207,15 @@ input:focus {
 }
 /*Selected overlay screen*/
 .selected-mKYnfr.option-n0icdO {
-    border-radius: 0px;
+    background-color: var(--main-color);
+    border-color: transparent;
 }
+.option-n0icdO:hover {
+    background-color: var(--hover-color) !important;
+    border-color: transparent;
+}
+
+
 /*Top right overaly screen*/
 .topRight-3GKDeL {
     border-radius: 0px;
@@ -1390,6 +1305,9 @@ input:focus {
 .checkbox .checkbox-inner input[type=checkbox] + span::after {
     border-radius: 0px;
 }
+.valueChecked-m-4IJZ {
+    background-color: var(--main-color)!important;
+}
 /*Keybind editor hover*/
 .card-FDVird:before {
     border-radius: 0px;
@@ -1434,7 +1352,7 @@ input:focus {
 .theme-dark .friendSelected-1sa4bG {
     background-color: rgba(79, 84, 92, 0);
 }
-/*Incoming caller*/
+/*Incoming call*/
 .incomingCallInner-2VmFiR {
     border-radius: 0px;
     border-color: var(--main-color) ;
@@ -1671,12 +1589,18 @@ input:focus {
     border-color: var(--main-color);
     box-shadow: 0 0 7px var(--main-color);
 }
+/*Login Box*/
+.theme-dark.authBox-hW6HRx {
+    background: #2b2b2b3d;
+    box-shadow: 7px 7px #00000070;
+    border-radius: 0px;
+}
 /*code block*/
 [class*="theme-"] .markup-2BOw-j code, [class*="theme-"] .markup-2BOw-j code.inline {
     color: hsla(0, 0%, 100%, .7) !important;
     background: hsla(0, 0%, 100%, 0.06) !important;
     border-radius: 0px;
-    border: 1px solid var(--main-color);
+    border: 1px solid #cc00ff33;
 }
 /*weird triangle in add role menu*/
 [class*="theme-"] .autocompleteArrow-Zxoy9H, [class*="theme-"] .autocompleteHeaderBackground-30T70q {
@@ -1773,7 +1697,7 @@ input:focus {
 .header-1RC2Wb {
     background-color: rgba(0, 0, 0, 0.6);
 }
-/*Server Boost settings*/
+/*Server Boost settings*/	
 
 /*unused boost*/
 .guildSubscriptionSlots-JPXXvN {
@@ -1817,7 +1741,6 @@ input:focus {
 .app-2rEoOp button {
     border-radius: 0px;
 }
-
 /*ANOTHER FUCKING UPDATE. FUCK. YOU. DISCORD*/
 .border-3dQmSY.speaking-WDn8Wm {
     -webkit-box-shadow: inset 0 0 0 2px var(--main-color)!important;
@@ -1841,6 +1764,7 @@ input:focus {
 .overlayTitle-8IcS01 {
     border-radius: 0px;
 }
+
 /*connecting screen*/
 .container-16j22k {
     background-color: #00000000;
@@ -2086,10 +2010,11 @@ img[alt] {
 .wrapper-2N7X54 {
     background-color: transparent;
 }
+/*
 .platform-win .layer-3QrUeG {
     top: -22px;
     padding-top: 0px;
-}
+}*/
 .layers-3iHuyZ:before {
     content: "Something";
     position: absolute;
@@ -2395,15 +2320,23 @@ guildIcon-3Co6k- {
 .bottomDivider-1K9Gao {
     border-bottom-color: var(--main-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
+/*Server dropdown with stuff like server boost, invite people, server settings, etc. */
+.styleFixed-sX-yHV {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+	backdrop-filter: blur(5px); 
+}
+/*Search in the top right*/
+.container-3ayLPN {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-color: var(--main-color)!important;
+    box-shadow: 0 0 7px var(--main-color)!important;
+	backdrop-filter: blur(5px); 
+}
+.option-96V44q.selected-rZcOL- {
+    background-color: var(--hover-color)!important;
+	border-radius: 0px;
+}
