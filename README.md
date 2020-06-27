@@ -4,8 +4,20 @@ Probably the most detailed and attention focused theme on the internet. <br>
 You can set your own image and colors. 
 <h3><a href='https://rauenzi.github.io/BetterDiscordApp/'>Bandaged Better Discord</a></h3>
 
+<h3>How to get live updates to themes</h3>
+<h5>Go to Custom CSS in the settings and paste this line of code in for the theme you want</h5> 
+<h5>If you want to keep your custom background image and color scheme put the root part of the css into the custom CSS field. This starts at line 20 and ends at line 107. </h5>
+
+Cyberpunk theme: <br>
+<i> @import url(https://min.gitcdn.link/repo/That-Thing/discordCSS/master/cybercity.css.theme.css); </i> <br>
+<br>
+Comfy theme: <br>
+<i> @import url(https://min.gitcdn.link/repo/That-Thing/discordCSS/master/comfy.css.theme.css); </i> <br>
+
 <h4>Theme 1: Cyberpunk City</h4>
-<img src="https://files.catbox.moe/w07llk.png" alt="Cyberpunk City by Sen">
+<img src="https://files.catbox.moe/smdoxn.png" alt="Cyberpunk City by Sen">
 <br>
 <h4>Theme 2: Comfy Theme</h4>
-<img src="https://files.catbox.moe/shnr5w.png" alt="Comfy Theme by Sen">
+<img src="https://files.catbox.moe/m1e8vu.png" alt="Comfy Theme by Sen">
+
+
