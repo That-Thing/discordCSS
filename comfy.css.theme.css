@@ -108,6 +108,14 @@
 
 
 
+/*Fuck betterdiscord for trying to force their idiotic shit down our throats. Go fuck yourselves you dumb cunts*/
+.anchor-3Z-8Bb {
+    color: #7763b8;
+	display: none;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+
 
 
 /*i hate discord*/
@@ -2403,4 +2411,18 @@ guildIcon-3Co6k- {
 }
 .auditLog-3jNbM6 {
     border-color: var(--main-color)!important;
+}
+/*image upload*/
+.inner-1ilYF7 {
+    background-color: #00000075!important;
+    border-radius: 0px;
+	border-bottom: none!important;
+	box-shadow-bottom: none!important;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+	backdrop-filter: blur(5px); 
+}
+.footer-3mqk7D {
+    background-color: transparent!important;
+    border-radius: 0px;
 }
