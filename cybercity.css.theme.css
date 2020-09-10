@@ -1473,6 +1473,7 @@ input:focus {
     background-color: #20222500;
 	border-color: var(--main-color);
     box-shadow: 0 0 7px var(--main-color);
+	margin-right: 5px;
 }
 /*hover over friend*/
 .peopleListItem-2nzedh.active-rhSpJJ, .peopleListItem-2nzedh:hover {
