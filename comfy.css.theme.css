@@ -2421,3 +2421,22 @@ guildIcon-3Co6k- {
     background-color: transparent!important;
     border-radius: 0px;
 }
+/*Popout when you click on an emoji*/
+.popoutContainer-1MXdqN {s
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-bottom: none!important;
+    box-shadow-bottom: none!important;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+    backdrop-filter: blur(5px);
+}
+.emojiSection-3Fb9ix {
+    background-color: #00000075!important;
+    border-radius: 0px;
+    border-bottom: none!important;
+    box-shadow-bottom: none!important;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+    backdrop-filter: blur(5px);
+}
