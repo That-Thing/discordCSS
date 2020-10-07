@@ -2422,7 +2422,7 @@ guildIcon-3Co6k- {
     border-radius: 0px;
 }
 /*Popout when you click on an emoji*/
-.popoutContainer-1MXdqN {s
+.popoutContainer-1MXdqN {
     background-color: #00000075!important;
     border-radius: 0px;
     border-bottom: none!important;
@@ -2439,4 +2439,7 @@ guildIcon-3Co6k- {
     border-color: var(--main-color);
     box-shadow: 0 0 7px var(--main-color);
     backdrop-filter: blur(5px);
+}
+.emojiSection-3Fb9ix {
+    background-color: transparent!important;
 }
