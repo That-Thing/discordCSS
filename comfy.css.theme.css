@@ -104,6 +104,8 @@
 	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
 	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
 	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
+	/* OTHER STUFF */
+	--channel-color: rgba(255, 255, 255, 0.62);
 }
 
 
@@ -2442,4 +2444,26 @@ guildIcon-3Co6k- {
 }
 .emojiSection-3Fb9ix {
     background-color: transparent!important;
+}
+/*Connection boxes in the settings. */
+.connection-1fbD7X {
+    background-color: #00000075!important;
+    border-bottom: none!important;
+    box-shadow-bottom: none!important;
+    border-color: var(--main-color);
+    box-shadow: 0 0 7px var(--main-color);
+    border-radius: 0px;
+}
+.connectionHeader-2MDqhu {
+	background-color: transparent;
+    border-radius: 0px!important;
+    border-bottom: 1px solid var(--main-color);
+}
+/*Selected channel*/
+.wrapper-2jXpOf.modeSelected-346R90 .content-1x5b-n:after {
+    border-radius: 0px!important;
+}
+/*Hover above channel*/
+.wrapper-2jXpOf:hover .content-1x5b-n:before {
+    border-radius: 0px!important;
 }
