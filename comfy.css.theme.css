@@ -2467,3 +2467,11 @@ guildIcon-3Co6k- {
 .wrapper-2jXpOf:hover .content-1x5b-n:before {
     border-radius: 0px!important;
 }
+/*Circle around avatar when user is speaking*/
+.voiceUser-1K6Xox .avatarSpeaking-2IGMRN {
+    border-radius: 0px;
+}
+/*user avatar in vc*/
+.voiceUser-1K6Xox .avatarContainer-28iYmV {
+    border-radius: 0px;
+}
