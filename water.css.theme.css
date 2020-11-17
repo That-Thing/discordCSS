@@ -1,7 +1,7 @@
 /**
-* @name Cyberpunk City
+* @name Water
 * @author Sen#0069
-* @description A pixel animation of a cyberpunk city.
+* @description A water wallpaper.
 * @version 2.0
 * @source https://github.com/That-Thing/discordCSS
 * @website https://onee.ch/
@@ -18,13 +18,13 @@
 
 
 :root {
-	--main-color: #7763b8 ;
-	--hover-color: #7763b88c;
+	--main-color: #5099bd;
+	--hover-color: #68accd;
     --background-blur: 0px;
     --background-brightness: 90		%;
-	--background-image: url(https://thumbs.gfycat.com/HilariousVelvetyArcherfish-small.gif) !important; /*Link must be HTTPS*/
+	--background-image: url(https://i.imgur.com/nFY20gD.jpg) !important; /*Link must be HTTPS*/
 	/* ACCENT COLORS */
-	--success-color: #7763b8; /* success accent color (hex, rgb or hsl) [default: #43b581] */
+	--success-color: #5099bd; /* success accent color (hex, rgb or hsl) [default: #43b581] */
 	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
 
 	/* STATUS COLORS */
@@ -44,7 +44,7 @@
 	/* APP BACKGROUND */
 	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
 	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	--background-image: url(https://thumbs.gfycat.com/HilariousVelvetyArcherfish-small.gif); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
+	--background-image: url(https://i.imgur.com/nFY20gD.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.gitlab.io/images/sapphire.jpg)]*/
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
 	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
@@ -104,9 +104,6 @@
 	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(---background-grayscale)] */
 	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(---background-sepia)] */
 	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
-	/* OTHER STUFF */
-	--channel-color: rgba(255, 255, 255, 0.62);
-
 }
 
 
