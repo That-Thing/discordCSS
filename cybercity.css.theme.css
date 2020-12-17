@@ -2496,3 +2496,16 @@ guildIcon-3Co6k- {
     backdrop-filter: blur(5px);
     border-bottom: none!important;
 }
+/*spoiler*/
+.contents-2mQqc9 .spoilerText-3p6IlD.hidden-HHr2R9 {
+    background: #6f6f6f;
+    filter: blur(3px);
+}
+/*New chat commands popup*/
+.chat-3bRxxu .autocomplete-1vrmpx {
+    background: transparent;
+    overflow: hidden;
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+    backdrop-filter: blur(5px);
+}
