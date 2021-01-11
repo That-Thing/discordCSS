@@ -2502,3 +2502,11 @@ guildIcon-3Co6k- {
 .optionalHeader-mLQoIx {
 	color: #fff;
 }
+/*Tooltip*/
+.tooltipPrimary-1d1ph4{
+    background: transparent!important;
+    overflow: hidden;
+    border: 1px solid var(--main-color);
+    border-radius: 0px;
+    backdrop-filter: blur(10px);
+}
