@@ -4,7 +4,7 @@
 * @description A pixel animation of a cyberpunk city.
 * @version 2.0
 * @source https://github.com/That-Thing/discordCSS
-* @website https://onee.ch/
+* @website https://sen.onee.ch/
 * @authorLink https://github.com/That-Thing
 * @invite kmDPEMs
 */
@@ -2540,4 +2540,31 @@ guildIcon-3Co6k- {
 .bd-addon-list .bd-addon-header {
     background: #00000040;
     border-bottom: 1px solid var(--main-color);
+}
+/*Permission plugin (not native to discord)*/
+#permissions-modal-wrapper #permissions-modal {
+    border: 1px solid var(--main-color)!important;
+    border-radius: 0px!important;
+	backdrop-filter: blur(10px)!important;
+}
+#permissions-modal-wrapper .header {
+	background: transparent!important;
+}
+#permissions-modal-wrapper .modal-body {
+    background-color: transparent!important;
+}
+#permissions-modal-wrapper .role-side {
+    background: transparent!important;
+}
+#permissions-modal-wrapper .perm-side {
+    background-color: transparent!important;
+}
+#permissions-modal-wrapper .role-item {
+    border-radius: 0px!important;
+}
+#permissions-modal-wrapper .role-item:hover {
+	background-color: var(--hover-color)!important
+}
+#permissions-modal-wrapper .role-item.selected {
+    background-color: var(--hover-color)!important
 }
