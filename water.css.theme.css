@@ -2565,3 +2565,25 @@ guildIcon-3Co6k- {
 #permissions-modal-wrapper .role-item.selected {
     background-color: var(--hover-color)!important
 }
+/*User popout card*/
+.userPopout-xaxa6l .profileBanner-33-uE1 {
+    border-radius: 0px!important;
+}
+.animatorLeft-1EQxU0 > .userPopout-xaxa6l {
+    border-radius: 0px!important;
+    margin-right: 0px;
+}
+.userPopout-xaxa6l {
+    border-radius: 0px!important;
+    backdrop-filter: blur(5px)!important;
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+}
+.avatar-37jOim {
+    border: none;
+    background-color: none;
+}
+/*Note textarea in user popout*/
+.textarea-2r0oV8:focus {
+    background-color: transparent;
+}
