@@ -2571,7 +2571,6 @@ guildIcon-3Co6k- {
 }
 .animatorLeft-1EQxU0 > .userPopout-xaxa6l {
     border-radius: 0px!important;
-    margin-right: 0px;
 }
 .userPopout-xaxa6l {
     border-radius: 0px!important;
@@ -2580,10 +2579,14 @@ guildIcon-3Co6k- {
     box-shadow: 0 0 10px var(--main-color) ;
 }
 .avatar-37jOim {
-    border: none;
-    background-color: none;
+	border-color: transparent;
+    background-color: transparent;
 }
 /*Note textarea in user popout*/
 .textarea-2r0oV8:focus {
     background-color: transparent;
+}
+.avatar-AvHqJA {
+    background-color: transparent;
+	border-color: transparent;
 }
