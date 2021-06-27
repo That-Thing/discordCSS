@@ -2593,3 +2593,16 @@ guildIcon-3Co6k- {
     background-color: transparent;
 	border-color: transparent;
 }
+/*Community rules*/
+.modal-f02hVt {
+    background-color: transparent;
+}
+.guildSidebar-2OCzWB {
+    background-color: transparent;
+}
+.formFieldWrapper-malor5, .settingsFormFieldWrapper-3Y77Pr {
+    border: 1px solid var(--main-color);
+}
+.formFieldWrapper-malor5 {
+    background-color: transparent;
+}
