@@ -2595,3 +2595,49 @@ guildIcon-3Co6k- {
 .formFieldWrapper-malor5 {
     background-color: transparent;
 }
+/*"More Active Threads" windows when hovering over a channel*/
+.popout-APcvZm {
+	background-color: transparent;
+    border-radius: 0px!important;
+    backdrop-filter: blur(5px)!important;
+    border-color: var(--main-color) ;
+    box-shadow: 0 0 10px var(--main-color) ;
+}
+.row-1ImlrZ {
+    border-radius: 0px;
+	border: 1px solid var(--main-color);
+}
+.row-1ImlrZ:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+/*Thread list*/
+.modal-2DCYwU {
+    background-color: transparent!important;
+	backdrop-filter: blur(5px)!important;	
+}
+.header-1VS4tm {
+    background-color: transparent;
+}
+.container-7uh5fX {
+    background-color: transparent;
+}
+.container-2I9Hud {
+	border-radius: 0px;
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+}
+.container-2I9Hud:hover {
+	border: 1px solid var(--hover-color);
+}
+.header-1VS4tm .tabBar-31Wimb .tab-PQvTH4.active-30vPlA, .list-wek7hJ .tabBar-wS4pjJ .tab-17bjMB.active-3JUHqX{
+    background-color: var(--main-color)!important;
+}
+.header-1VS4tm:hover .tabBar-31Wimb:hover .tab-PQvTH4.active-30vPlA:hover, .list-wek7hJ:hover .tabBar-wS4pjJ:hover .tab-17bjMB.active-3JUHqX:hover{
+    background-color: var(--hover-color)!important;
+}
+/*thread header notification*/
+.chatHeaderBar-4vZS1x {
+    background-color: transparent!important;
+	border: 1px solid var(--main-color);	
+}
