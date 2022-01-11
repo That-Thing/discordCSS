@@ -107,20 +107,40 @@
 	/* OTHER STUFF */
 	--channel-color: rgba(255, 255, 255, 0.62);
 
+
+
+
+	/*Discord stuff*/
+	--background-secondary: #2f313600;
+	--background-primary: transparent;
+	--background-secondary-alt: transparent;
+	--background-tertiary: transparent;
+	--background-floating: rgba(0, 0, 0, 0.6);
+	--brand-experiment: var(--main-color);
+	--brand-experiment-600: var(--main-color);
+	--brand-experiment-560: var(--hover-color);
+	--brand-experiment-30a: var(--hover-color);
 }
 
 
 
 
 
-
-
-
-
-
-
-
-/*Fuck betterdiscord for trying to force their idiotic shit down our throats. Go fuck yourselves you dumb cunts*/
+.container-YkUktl:before {
+    content: none;
+}
+.container-YkUktl:after {
+    content: none;
+}
+.typeWindows-2-g3UY > .wordmark-2u86JB:before {
+    content: ":^)";
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-shadow: 0 0 3px #000;
+}
+.typeWindows-2-g3UY > .wordmark-2u86JB:after {
+    content: none;
+}
 
 
 
@@ -2081,20 +2101,6 @@ img[alt] {
     font-size: 14px;
     text-shadow: 0 0 3px #000;
 }
-.typeWindows-1za-n7>.wordmark-2iDDfm:after {
-    content: "onee.ch";
-    color: rgba(255,255,255,0.3);
-    font-family: var(--code-font);
-    font-size: 10px;
-}
-.container-3baos1:after {
-	display: none;
-    content: "v6-pre.4.7.7";
-    left: 50%;
-    text-align: left;
-    opacity: 0;
-    transform: translateX(50%) rotateX(90deg);
-}
 
 
 /*Updated to clearview 6*/
@@ -2652,3 +2658,80 @@ guildIcon-3Co6k- {
     background-color: transparent!important;
 	border: 1px solid var(--main-color);	
 }
+/*Timed out message*/
+.spamBanner-F4eeXk {
+    background-color: transparent!important;
+    backdrop-filter: blur(5px)!important;
+	border: 1px solid var(--main-color); 
+}
+
+
+
+/*Container with friends list, blocked, etc. */
+.container-2cd8Mz {
+    background-color: #00000042!important;
+}
+/*Friends search bar*/
+.container-2oNtJn {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*Account profile card in the settings*/
+.accountProfileCard-lbN7n- {
+    background-color: transparent;
+    backdrop-filter: blur(5px)!important;
+	border: 1px solid var(--main-color); 
+}
+/*Avatar in settings profile card*/
+.avatar-3mTjvZ {
+    background-color: transparent;
+	border: none; 
+}
+/*user preview when editing profile in settings*/
+.profileBannerPreview-3mLIdO {
+    background-color: transparent;
+    backdrop-filter: blur(5px)!important;
+	border: 1px solid var(--main-color); 
+}
+
+
+
+/*roles in user popout*/ 
+.role-2TIOKu {
+    backdrop-filter: blur(5px)!important;
+	border: 1px solid var(--main-color); 
+}
+
+
+
+/*Right click menu*/
+.menu-1QACrS {
+    backdrop-filter: blur(5px)!important;
+	border: 1px solid var(--main-color); 
+    border-radius: 0px;
+}
+
+/*Emoji and command autocomplete*/
+.autocomplete-3NRXG8 {
+    background-color: rgba(0, 0, 0, 0.6)!important;
+    backdrop-filter: blur(5px)!important;
+	border: 1px solid var(--main-color);
+	border-radius: 0px;
+}
+
+.theme-dark .selected-3H3-RC {
+    background-color: var(--hover-color);
+	border-radius: 0px;
+}
+
+
+
+/*Main text box*/
+.channelTextArea-1FufC0 {
+	border-radius: 0px;
+}
+
+/*Mentioned roles and users*/
+.topic-11NuQZ .wrapper-3WhCwL, .topic-11NuQZ .mention, .markup-eYLPri .wrapper-3WhCwL, .markup-eYLPri .mention {
+	border-radius: 0px;
+}	
