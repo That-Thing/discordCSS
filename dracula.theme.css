@@ -1,0 +1,140 @@
+/**
+* @name Dracula
+* @author Sen#0009
+* @description A basic dracula theme
+* @version 2.0
+* @source https://github.com/That-Thing/discordCSS
+* @website https://sen.onee.ch/
+* @authorLink https://github.com/That-Thing
+*/
+
+.theme-dark {
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --text-normal: #f8f8f2;
+    --text-muted: #C8C8C8;
+    /*--text-link: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);*/
+    --text-link: #ff79c6;
+    --text-link-low-saturation: hsl(197,calc(var(--saturation-factor, 1)*100%),52.9%);
+    --text-positive: hsl(139,calc(var(--saturation-factor, 1)*66.8%),58.6%);
+    --text-warning: hsl(38,calc(var(--saturation-factor, 1)*95.7%),54.1%);
+    --text-danger: hsl(359,calc(var(--saturation-factor, 1)*82.6%),59.4%);
+    --text-brand: #ff79c6;
+    --brand-experiment: #ff79c6;
+    --brand-experiment-560: #ff5eb9;
+    --brand-experiment-600: #ff4ab1;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #f8f8f2;
+    --interactive-active: #fff;
+    --interactive-muted: #4f545c;
+    --background-primary: #1e1f29;
+    --background-secondary: #232530;
+    --background-secondary-alt: #1e1f29;
+    --background-tertiary: #1e1f29  ;
+    --background-accent: #4f545c;
+    --background-floating: #1e1f29;
+    --background-mobile-primary: #1e1f29;
+    --background-mobile-secondary: #232530;
+    --background-modifier-hover: rgba(79,84,92,0.16);
+    --background-modifier-active: rgba(79,84,92,0.24);
+    --background-modifier-selected: rgba(79,84,92,0.32);
+    --background-modifier-accent: hsla(0,0%,100%,0.06);
+    --info-positive-text: #fff;
+    --info-warning-text: #fff;
+    --info-danger-text: #fff;
+    --info-help-background: hsla(197,calc(var(--saturation-factor, 1)*100%),47.8%,0.1);
+    --info-help-foreground: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+    --info-help-text: #fff;
+    --status-warning-text: #000;
+    --scrollbar-thin-thumb: #232530;
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: #232530;
+    --scrollbar-auto-track: hsl(210,calc(var(--saturation-factor, 1)*9.8%),20%);
+    --scrollbar-auto-scrollbar-color-thumb: #232530;
+    --scrollbar-auto-scrollbar-color-track: #232530;
+    --elevation-stroke: 0 0 0 1px rgba(4,4,5,0.15);
+    --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+    --elevation-medium: 0 4px 4px rgba(0,0,0,0.16);
+    --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+    --logo-primary: #fff;
+    --control-brand-foreground: #ff79c6;
+    --control-brand-foreground-new: #ff79c6;
+    --background-mentioned: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.1);
+    --background-mentioned-hover: hsla(38,calc(var(--saturation-factor, 1)*95.7%),54.1%,0.08);
+    --background-message-hover: rgba(4,4,5,0.07);
+    --channels-default: #8e9297;
+    --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    --channeltextarea-background: #2b2d3b;
+    --activity-card-background: #232530;
+    --textbox-markdown-syntax: #8e9297;
+    --deprecated-card-bg: rgba(32,34,37,0.6);
+    --deprecated-card-editable-bg: rgba(32,34,37,0.3);
+    --deprecated-store-bg: #1e1f29;
+    --deprecated-quickswitcher-input-background: #C8C8C8;
+    --deprecated-quickswitcher-input-placeholder: hsla(0,0%,100%,0.3);
+    --deprecated-text-input-bg: rgba(0,0,0,0.1);
+    --deprecated-text-input-border: rgba(0,0,0,0.3);
+    --deprecated-text-input-border-hover: #040405;
+    --deprecated-text-input-border-disabled: #232530;
+    --deprecated-text-input-prefix: #f8f8f2;
+}
+
+.circleIconButton-1QV--U {
+    color: var(--text-link);
+    background-color: var(--background-secondary);
+}
+.circleIconButton-1QV--U.selected-1JjBPm {
+    background-color: var(--text-link);
+    color: var(--text-normal);
+}
+.autocomplete-1vrmpx {
+    background-color: var(--channeltextarea-background);
+}
+.theme-dark .autocomplete-1vrmpx {
+    background-color: var(--channeltextarea-background);
+}
+.theme-dark .selected-1Tbx07 {
+    background-color: None;
+    filter: brightness(1.20);
+}
+.theme-dark .container-1D34oG {
+    background-color: var(--background-primary);
+}
+
+/*CTRL+T quickswitch menu*/
+.input-2VB9rf {
+    background-color: var(--channeltextarea-background);
+    color: var(--text-normal);
+}
+/*Friends list main page*/
+.container-2cd8Mz {
+    background-color: var(--background-primary)!important;
+}
+/**/
+.role-2TIOKu {
+    border: 1px solid var(--brand-experiment);
+}
+/*Emoji and command autocomplete*/
+.autocomplete-3NRXG8 {
+    background-color: var(--background-secondary)!important;
+}
+/*Gift button*/
+.button-f-18h6uQ {
+    display: none;
+}
+/*Sticker button*/
+.stickerButton-1-nFh2 {
+    display: none;
+}
+/*Help button*/
+.anchor-1MIwyf {
+    display: none;
+}
+/*Explore servers*/
+#app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > nav > ul > div.scroller-3X7KbA.none-2-_0dP.scrollerBase-_bVAAt > div:nth-child(5) {
+    display: none;
+}
+/*Use apps*/
+#channel-attach-SLASH_COMMAND {
+    display: none;
+}
