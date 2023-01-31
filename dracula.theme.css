@@ -30,7 +30,9 @@
     --background-primary: #1e1f29;
     --background-secondary: #232530;
     --background-secondary-alt: #1e1f29;
-    --background-tertiary: #1e1f29  ;
+	--primary-dark-600: #232530;
+	--primary-dark-700: #1e1f29;
+    --background-tertiary: #1e1f29;
     --background-accent: #4f545c;
     --background-floating: #1e1f29;
     --background-mobile-primary: #1e1f29;
