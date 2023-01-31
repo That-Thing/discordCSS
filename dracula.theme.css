@@ -138,3 +138,11 @@
 #channel-attach-SLASH_COMMAND {
     display: none;
 }
+/*Make avatar icons into squares*/
+.avatar-2e8lTP {
+	border-radius: 0px;
+}
+/*Text box border radius*/
+.scrollableContainer-15eg7h {
+	border-radius: 0px;
+}
