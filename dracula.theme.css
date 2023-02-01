@@ -30,8 +30,9 @@
     --background-secondary: #232530;
     --background-secondary-alt: #1e1f29;
 	--primary-dark-600: #232530;
-	--primary-dark-700: #1e1f29;
 	--primary-dark-630: #1e1f29;
+	--primary-dark-700: #1e1f29;
+	--primary-dark-800: #1e1f29;	
     --background-tertiary: #1e1f29;
     --background-accent: #4f545c;
     --background-floating: #1e1f29;
@@ -129,7 +130,7 @@
     display: none;
 }
 /*Help Button*/
-#app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > a, #app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div.chat-2ZfjoI > div.wrapper-1gVUIN.normal-qRirv5.video-3n15R6 > div.callContainer-HtHELf.theme-dark > div > div.videoControls-353CsJ > div.topControls-23RE3h.controlSection-1mNixL > div > div.headerWrapper-1ULEPv > section > div.toolbar-3_r2xA > a {
+#app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > a, #app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div.chat-2ZfjoI > div.wrapper-1gVUIN.normal-qRirv5.video-3n15R6 > div.callContainer-HtHELf.theme-dark > div > div.videoControls-353CsJ > div.topControls-23RE3h.controlSection-1mNixL > div > div.headerWrapper-1ULEPv > section > div.toolbar-3_r2xA > a, #app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > main > section > div.toolbar-3_r2xA > a {
 	display: none;
 }
 /*Explore servers*/
