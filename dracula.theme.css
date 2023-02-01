@@ -2,12 +2,11 @@
 * @name Dracula
 * @author Sen#0009
 * @description A basic dracula theme
-* @version 2.0
+* @version 2.5
 * @source https://github.com/That-Thing/discordCSS
 * @website https://sen.cat/
 * @authorLink https://github.com/That-Thing
 */
-
 .theme-dark {
     --header-primary: #fff;
     --header-secondary: #b9bbbe;
@@ -32,6 +31,7 @@
     --background-secondary-alt: #1e1f29;
 	--primary-dark-600: #232530;
 	--primary-dark-700: #1e1f29;
+	--primary-dark-630: #1e1f29;
     --background-tertiary: #1e1f29;
     --background-accent: #4f545c;
     --background-floating: #1e1f29;
@@ -129,7 +129,7 @@
     display: none;
 }
 /*Help Button*/
-#app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > a {
+#app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div.chat-2ZfjoI > section > div.toolbar-3_r2xA > a, #app-mount > div.appDevToolsWrapper-1QxdQf > div > div.app-3xd6d0 > div > div.layers-OrUESM.layers-1YQhyW > div > div.container-1eFtFS > div > div > div.chat-2ZfjoI > div.wrapper-1gVUIN.normal-qRirv5.video-3n15R6 > div.callContainer-HtHELf.theme-dark > div > div.videoControls-353CsJ > div.topControls-23RE3h.controlSection-1mNixL > div > div.headerWrapper-1ULEPv > section > div.toolbar-3_r2xA > a {
 	display: none;
 }
 /*Explore servers*/
@@ -147,4 +147,11 @@
 /*Text box border radius*/
 .scrollableContainer-15eg7h {
 	border-radius: 0px;
+}
+/*Video call buttons*/
+.colorable-3rVGna.primaryDark-2UJt1G {
+	background: #232530;
+}
+.colorable-3rVGna.primaryDark-2UJt1G.active-3D763s, .colorable-3rVGna.primaryDark-2UJt1G:hover {
+	background: #1e1f29;
 }
